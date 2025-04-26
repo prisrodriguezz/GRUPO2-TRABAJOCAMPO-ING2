@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_Ejercicio.cs" />
+    <Compile Include="CD_Permiso.cs" />
+    <Compile Include="CD_PlanEntrenamiento.cs" />
+    <Compile Include="CD_Rol.cs" />
     <Compile Include="CD_usuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
