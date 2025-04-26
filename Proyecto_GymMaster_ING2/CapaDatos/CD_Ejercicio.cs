@@ -34,10 +34,7 @@ namespace CapaDatos
                         });
                     }
                 }
-        }
-=======
             }
->>>>>>> 014eb1249acc6ca0d0bc8f3d2b01addfce1c1fe5
             return lista;
         }
     }
