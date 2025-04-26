@@ -11,12 +11,29 @@ namespace CapaDatos
 {
     public class CD_Ejercicio
     {
+        // Método para listar los ejercicios
         public List<Ejercicio> Listar()
         {
             List<Ejercicio> lista = new List<Ejercicio>();
             using (SqlConnection conexion = new SqlConnection(Conexion.cadena))
             {
-                // a realizar
+                SqlCommand cmd = new SqlCommand("SP_LISTAR_EJERCICIOS", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                conexion.Open();
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        lista.Add(new Ejercicio
+                        {
+                            id_ejercicio = Convert.ToInt32(reader["id_ejercicio"]),
+                            nombre = reader["nombre"].ToString(),
+                            repeticiones = Convert.ToInt32(reader["repeticiones"]),
+                            tiempo = Convert.ToInt32(reader["tiempo"])
+                        });
+                    }
+                }
             }
             return lista;
         }
