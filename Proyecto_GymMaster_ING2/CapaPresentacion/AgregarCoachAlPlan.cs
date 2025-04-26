@@ -32,7 +32,7 @@ namespace CapaPresentacion
             dgvdataAgregarCoach.Rows.Clear(); // Limpia el DataGrid antes de actualizar
             foreach (Usuario item in listausuario)
             {
-                if (item.id_rol.id_rol == 3 && item.id_usuario != usuarioActual.id_usuario) //solo lista usuarios 'coach' y el registro del usuario actual saltea
+                if (item.id_rol.id_rol == 2 && item.id_usuario != usuarioActual.id_usuario) //solo lista usuarios 'coach' y el registro del usuario actual saltea
                 {
                     DateTime fechaNacimiento = DateTime.Parse(item.fecha_nacimiento);
 

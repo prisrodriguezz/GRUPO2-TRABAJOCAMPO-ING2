@@ -29,8 +29,10 @@ namespace CapaDatos
                         {
                             id_ejercicio = Convert.ToInt32(reader["id_ejercicio"]),
                             nombre = reader["nombre"].ToString(),
-                            repeticiones = Convert.ToInt32(reader["repeticiones"]),
-                            tiempo = Convert.ToInt32(reader["tiempo"])
+                            repeticiones = reader["repeticiones"] != DBNull.Value ? Convert.ToInt32(reader["repeticiones"]) : 0,
+                            tiempo = reader["tiempo"] != DBNull.Value ? Convert.ToInt32(reader["tiempo"]) : 0
+                            //repeticiones = Convert.ToInt32(reader["repeticiones"]),
+                            //tiempo = Convert.ToInt32(reader["tiempo"])
                         });
                     }
                 }

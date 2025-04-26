@@ -300,8 +300,10 @@ namespace CapaDatos
                     {
                         id_ejercicio = Convert.ToInt32(dr["id_ejercicio"]),
                         nombre = dr["nombre"].ToString(),
-                        repeticiones = Convert.ToInt32(dr["repeticiones"]),
-                        tiempo = Convert.ToInt32(dr["tiempo"])
+                        repeticiones = dr["repeticiones"] != DBNull.Value ? Convert.ToInt32(dr["repeticiones"]) : 0,
+                        tiempo = dr["tiempo"] != DBNull.Value ? Convert.ToInt32(dr["tiempo"]) : 0
+                        //repeticiones = Convert.ToInt32(dr["repeticiones"]),
+                        //tiempo = Convert.ToInt32(dr["tiempo"])
                     });
                 }
                 dr.Close();

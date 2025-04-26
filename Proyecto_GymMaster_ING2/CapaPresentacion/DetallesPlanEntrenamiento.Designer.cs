@@ -75,7 +75,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvdataCoach.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvdataCoach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvdataCoach.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvdataCoach.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
@@ -102,7 +102,8 @@ namespace CapaPresentacion
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdataCoach.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvdataCoach.Location = new System.Drawing.Point(12, 203);
+            this.dgvdataCoach.Location = new System.Drawing.Point(16, 250);
+            this.dgvdataCoach.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvdataCoach.MultiSelect = false;
             this.dgvdataCoach.Name = "dgvdataCoach";
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -117,16 +118,16 @@ namespace CapaPresentacion
             this.dgvdataCoach.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dgvdataCoach.RowTemplate.Height = 30;
             this.dgvdataCoach.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdataCoach.Size = new System.Drawing.Size(517, 159);
+            this.dgvdataCoach.Size = new System.Drawing.Size(689, 196);
             this.dgvdataCoach.TabIndex = 47;
             // 
             // idUsuario
             // 
             this.idUsuario.HeaderText = "IdUsuario";
+            this.idUsuario.MinimumWidth = 6;
             this.idUsuario.Name = "idUsuario";
             this.idUsuario.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.idUsuario.Visible = false;
-            this.idUsuario.Width = 66;
             // 
             // Nombre
             // 
@@ -134,16 +135,16 @@ namespace CapaPresentacion
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.Nombre.DefaultCellStyle = dataGridViewCellStyle3;
             this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Nombre.Width = 58;
             // 
             // Apellido
             // 
             this.Apellido.HeaderText = "Apellido";
+            this.Apellido.MinimumWidth = 6;
             this.Apellido.Name = "Apellido";
             this.Apellido.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Apellido.Width = 57;
             // 
             // DNI
             // 
@@ -151,9 +152,9 @@ namespace CapaPresentacion
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             this.DNI.DefaultCellStyle = dataGridViewCellStyle4;
             this.DNI.HeaderText = "DNI";
+            this.DNI.MinimumWidth = 6;
             this.DNI.Name = "DNI";
             this.DNI.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.DNI.Width = 34;
             // 
             // Email
             // 
@@ -161,9 +162,9 @@ namespace CapaPresentacion
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             this.Email.DefaultCellStyle = dataGridViewCellStyle5;
             this.Email.HeaderText = "E-mail";
+            this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
             this.Email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Email.Width = 49;
             // 
             // FechaNacimiento
             // 
@@ -171,9 +172,9 @@ namespace CapaPresentacion
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             this.FechaNacimiento.DefaultCellStyle = dataGridViewCellStyle6;
             this.FechaNacimiento.HeaderText = "Fecha Nacimiento";
+            this.FechaNacimiento.MinimumWidth = 6;
             this.FechaNacimiento.Name = "FechaNacimiento";
             this.FechaNacimiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.FechaNacimiento.Width = 102;
             // 
             // Telefono
             // 
@@ -181,17 +182,18 @@ namespace CapaPresentacion
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
             this.Telefono.DefaultCellStyle = dataGridViewCellStyle7;
             this.Telefono.HeaderText = "Telefono";
+            this.Telefono.MinimumWidth = 6;
             this.Telefono.Name = "Telefono";
             this.Telefono.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Telefono.Width = 61;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(9, 182);
+            this.label1.Location = new System.Drawing.Point(12, 224);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(142, 17);
+            this.label1.Size = new System.Drawing.Size(189, 22);
             this.label1.TabIndex = 48;
             this.label1.Text = "COACHS ASOCIADOS:";
             // 
@@ -199,9 +201,10 @@ namespace CapaPresentacion
             // 
             this.cantCoachs.AutoSize = true;
             this.cantCoachs.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantCoachs.Location = new System.Drawing.Point(146, 182);
+            this.cantCoachs.Location = new System.Drawing.Point(195, 224);
+            this.cantCoachs.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cantCoachs.Name = "cantCoachs";
-            this.cantCoachs.Size = new System.Drawing.Size(15, 17);
+            this.cantCoachs.Size = new System.Drawing.Size(19, 22);
             this.cantCoachs.TabIndex = 49;
             this.cantCoachs.Text = "0";
             // 
@@ -209,9 +212,10 @@ namespace CapaPresentacion
             // 
             this.cantEjercicios.AutoSize = true;
             this.cantEjercicios.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cantEjercicios.Location = new System.Drawing.Point(164, 9);
+            this.cantEjercicios.Location = new System.Drawing.Point(219, 11);
+            this.cantEjercicios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.cantEjercicios.Name = "cantEjercicios";
-            this.cantEjercicios.Size = new System.Drawing.Size(15, 17);
+            this.cantEjercicios.Size = new System.Drawing.Size(19, 22);
             this.cantEjercicios.TabIndex = 51;
             this.cantEjercicios.Text = "0";
             // 
@@ -219,9 +223,10 @@ namespace CapaPresentacion
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 9);
+            this.label3.Location = new System.Drawing.Point(12, 11);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(159, 17);
+            this.label3.Size = new System.Drawing.Size(211, 22);
             this.label3.TabIndex = 50;
             this.label3.Text = "EJERCICIOS ASOCIADOS:";
             // 
@@ -234,7 +239,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightGray;
             dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewEjercicios.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridViewEjercicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewEjercicios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEjercicios.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
@@ -258,7 +263,8 @@ namespace CapaPresentacion
             dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewEjercicios.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dataGridViewEjercicios.Location = new System.Drawing.Point(12, 29);
+            this.dataGridViewEjercicios.Location = new System.Drawing.Point(16, 36);
+            this.dataGridViewEjercicios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridViewEjercicios.MultiSelect = false;
             this.dataGridViewEjercicios.Name = "dataGridViewEjercicios";
             this.dataGridViewEjercicios.ReadOnly = true;
@@ -274,17 +280,17 @@ namespace CapaPresentacion
             this.dataGridViewEjercicios.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dataGridViewEjercicios.RowTemplate.Height = 30;
             this.dataGridViewEjercicios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewEjercicios.Size = new System.Drawing.Size(517, 143);
+            this.dataGridViewEjercicios.Size = new System.Drawing.Size(689, 176);
             this.dataGridViewEjercicios.TabIndex = 52;
             // 
             // idEjercicio
             // 
             this.idEjercicio.HeaderText = "ID";
+            this.idEjercicio.MinimumWidth = 6;
             this.idEjercicio.Name = "idEjercicio";
             this.idEjercicio.ReadOnly = true;
             this.idEjercicio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.idEjercicio.Visible = false;
-            this.idEjercicio.Width = 25;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -292,10 +298,10 @@ namespace CapaPresentacion
             dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle12;
             this.dataGridViewTextBoxColumn1.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
             this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn1.Width = 63;
             // 
             // repeticiones
             // 
@@ -303,10 +309,10 @@ namespace CapaPresentacion
             dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
             this.repeticiones.DefaultCellStyle = dataGridViewCellStyle13;
             this.repeticiones.HeaderText = "Repeticiones";
+            this.repeticiones.MinimumWidth = 6;
             this.repeticiones.Name = "repeticiones";
             this.repeticiones.ReadOnly = true;
             this.repeticiones.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.repeticiones.Width = 94;
             // 
             // tiempo
             // 
@@ -314,16 +320,16 @@ namespace CapaPresentacion
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
             this.tiempo.DefaultCellStyle = dataGridViewCellStyle14;
             this.tiempo.HeaderText = "Tiempo en segundos";
+            this.tiempo.MinimumWidth = 6;
             this.tiempo.Name = "tiempo";
             this.tiempo.ReadOnly = true;
             this.tiempo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.tiempo.Width = 128;
             // 
             // DetallesPlanEntrenamiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 377);
+            this.ClientSize = new System.Drawing.Size(721, 464);
             this.Controls.Add(this.dataGridViewEjercicios);
             this.Controls.Add(this.cantEjercicios);
             this.Controls.Add(this.label3);
@@ -331,6 +337,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvdataCoach);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DetallesPlanEntrenamiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DETALLES";
