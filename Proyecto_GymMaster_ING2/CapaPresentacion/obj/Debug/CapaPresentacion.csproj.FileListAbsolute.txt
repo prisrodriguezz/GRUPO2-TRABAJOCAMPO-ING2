@@ -52,3 +52,28 @@ C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\Cap
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.NuevoPlanEntrenamiento.resources
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Principal.resources
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Usuarios.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaPresentacion.exe.config
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaPresentacion.exe
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaEntidad.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\FontAwesome.Sharp.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaEntidad.pdb
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.AgregarCoachAlPlan.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.DetallesPlanEntrenamiento.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.ListaPlanesDeEntrenamiento.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Ejercicios.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.NuevoPlanEntrenamiento.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Principal.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Usuarios.resources
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.pdb

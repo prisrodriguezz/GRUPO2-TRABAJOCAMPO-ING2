@@ -31,3 +31,12 @@ C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMa
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.dll
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.pdb
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Lic en Sistemas\Ingenieria II\App_2_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.pdb

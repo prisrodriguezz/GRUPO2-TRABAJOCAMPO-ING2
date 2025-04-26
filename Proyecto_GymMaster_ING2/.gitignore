@@ -1,2 +1,4 @@
 # Ignorar carpeta de configuración de Visual Studio
 .vs/
+obj/
+
