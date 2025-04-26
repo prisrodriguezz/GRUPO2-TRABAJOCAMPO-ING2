@@ -22,3 +22,9 @@ C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_
 C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaEntidad\obj\Debug\CapaEntidad.pdb

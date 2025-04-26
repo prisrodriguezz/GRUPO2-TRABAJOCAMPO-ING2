@@ -34,3 +34,14 @@ C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_
 C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPres.61CA7C38.Up2Date
 C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.DetallesPlanEntrenamiento.resources
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Inicio.resources
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.ListaPlanesDeEntrenamiento.resources
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.NuevoPlanEntrenamiento.resources
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Usuarios.resources
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.exe
+C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
