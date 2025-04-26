@@ -10,3 +10,12 @@ C:\Users\natal\Desktop\Proyecto ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug
 C:\Users\natal\Desktop\Proyecto ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 C:\Users\natal\Desktop\Proyecto ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\natal\Desktop\Proyecto ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Lic en Sistemas\Ingenieria II\App_proyecto\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.pdb
