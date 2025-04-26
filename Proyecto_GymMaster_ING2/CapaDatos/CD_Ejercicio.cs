@@ -11,6 +11,7 @@ namespace CapaDatos
 {
     public class CD_Ejercicio
     {
+        // Método para listar los ejercicios
         public List<Ejercicio> Listar()
         {
             List<Ejercicio> lista = new List<Ejercicio>();
@@ -33,7 +34,7 @@ namespace CapaDatos
                         });
                     }
                 }
-        }
+            }
             return lista;
         }
     }
