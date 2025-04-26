@@ -108,7 +108,7 @@ namespace CapaPresentacion
             this.textBoxDni.BackColor = System.Drawing.Color.White;
             this.textBoxDni.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxDni.Location = new System.Drawing.Point(113, 324);
-            this.textBoxDni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxDni.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDni.Name = "textBoxDni";
             this.textBoxDni.Size = new System.Drawing.Size(439, 34);
             this.textBoxDni.TabIndex = 7;
@@ -147,7 +147,7 @@ namespace CapaPresentacion
             this.textBoxContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxContraseña.ForeColor = System.Drawing.SystemColors.WindowText;
             this.textBoxContraseña.Location = new System.Drawing.Point(113, 434);
-            this.textBoxContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContraseña.Name = "textBoxContraseña";
             this.textBoxContraseña.PasswordChar = '*';
             this.textBoxContraseña.Size = new System.Drawing.Size(439, 34);
@@ -168,7 +168,7 @@ namespace CapaPresentacion
             this.BIngresar.IconSize = 30;
             this.BIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BIngresar.Location = new System.Drawing.Point(136, 514);
-            this.BIngresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BIngresar.Margin = new System.Windows.Forms.Padding(4);
             this.BIngresar.Name = "BIngresar";
             this.BIngresar.Size = new System.Drawing.Size(154, 59);
             this.BIngresar.TabIndex = 11;
@@ -187,7 +187,7 @@ namespace CapaPresentacion
             this.panel1.Controls.Add(this.label4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(667, 738);
             this.panel1.TabIndex = 12;
@@ -206,7 +206,7 @@ namespace CapaPresentacion
             this.BCancelar.IconSize = 30;
             this.BCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BCancelar.Location = new System.Drawing.Point(359, 514);
-            this.BCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.BCancelar.Name = "BCancelar";
             this.BCancelar.Size = new System.Drawing.Size(160, 59);
             this.BCancelar.TabIndex = 13;
@@ -235,7 +235,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.iconPictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Inicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TransparencyKey = System.Drawing.Color.Gold;

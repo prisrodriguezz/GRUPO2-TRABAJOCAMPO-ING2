@@ -31,7 +31,7 @@ namespace CapaPresentacion
         // Método para cargar planes de entrenamiento en el DataGridView
         private void CargarPlanesDeEntrenamiento()
         {
-            if(usuarioActual.id_rol.id_rol == 2) //Usuario Administrador ve todos los planes
+            if(usuarioActual.id_rol.id_rol == 1) //Usuario Administrador ve todos los planes
             {
                 BNuevoPlan.Visible = false;
 
@@ -49,7 +49,7 @@ namespace CapaPresentacion
                 dgvdataListaPlanes.Columns["editar"].Visible = false;
                 dgvdataListaPlanes.Columns["eliminar"].Visible = false;
             }
-            else if(usuarioActual.id_rol.id_rol == 3) // Usuario coach ve solo sus planes
+            else if(usuarioActual.id_rol.id_rol == 2) // Usuario coach ve solo sus planes
             {
                 labelTITULO.Text = "MIS PLANES";
 

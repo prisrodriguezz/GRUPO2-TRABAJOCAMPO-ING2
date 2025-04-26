@@ -28,3 +28,6 @@ C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMa
 C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date

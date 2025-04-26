@@ -23,7 +23,38 @@ namespace CapaPresentacion
 
         private void BIngresar_Click(object sender, EventArgs e)
         {
-            
+            List<Usuario> TEST = new CN_usuario().Listar();
+            Usuario ousuario = new CN_usuario().Listar().Where(u => u.dni == textBoxDni.Text && u.contraseña == textBoxContraseña.Text).FirstOrDefault();
+
+            if (ousuario == null)
+            {
+                MessageBox.Show("Los datos ingresados son incorrectos o el usuario no existe.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                textBoxDni.Text = "";
+                textBoxContraseña.Text = "";
+            }
+            else if (!ousuario.estado)
+            {
+                MessageBox.Show("El usuario está inactivo.", "Usuario Inactivo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                textBoxDni.Text = "";
+                textBoxContraseña.Text = "";
+            }
+            else
+            {
+                Principal form = new Principal(ousuario); //crea una instancia del formulario principal
+
+                this.Hide(); //el formulario del login(inicio) se oculta una vez ingresado
+
+                form.ShowDialog(); //muestra el formulario principal como diálogo modal
+
+                textBoxDni.Text = "";
+                textBoxContraseña.Text = "";
+            }
+
+            //this.Close(); //cuando el formulario principal se cierra tambien se cierra el programa
+
+            this.Show(); //muestra de nuevo el formulario de inicio cuando el principal se cierra
         }
 
         private void BCancelar_Click(object sender, EventArgs e)

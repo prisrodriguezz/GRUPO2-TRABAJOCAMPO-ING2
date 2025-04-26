@@ -45,3 +45,10 @@ C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMa
 C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
 C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\Estudiante\Desktop\trabajocampo\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.AgregarCoachAlPlan.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.DetallesPlanEntrenamiento.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.ListaPlanesDeEntrenamiento.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Ejercicios.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.NuevoPlanEntrenamiento.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Principal.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.Usuarios.resources
