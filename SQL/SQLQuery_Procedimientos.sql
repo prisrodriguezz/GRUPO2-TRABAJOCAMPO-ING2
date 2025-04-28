@@ -250,3 +250,39 @@ BEGIN
     DELETE FROM Usuario_Plan
     WHERE id_plan = @id_plan;
 END;
+
+-- PROCEDIMIENTOS PARA LISTAR LAS ASOCIACIONES DE COACHS Y EJERCICIOS AL PLAN
+
+CREATE PROCEDURE SP_LISTAR_EJERCICIOS_POR_PLAN
+    @id_plan INT
+AS
+BEGIN
+    SELECT e.id_ejercicio, e.nombre, e.repeticiones, e.tiempo
+    FROM Ejercicio e
+    INNER JOIN Plan_Ejercicio pe ON e.id_ejercicio = pe.id_ejercicio
+    WHERE pe.id_plan = @id_plan;
+END;
+GO
+
+CREATE PROCEDURE SP_LISTAR_COACHS_POR_PLAN
+    @id_plan INT
+AS
+BEGIN
+    SELECT u.id_usuario, u.nombre, u.apellido, u.dni, u.email, u.fecha_nacimiento, u.telefono
+    FROM Usuario u
+    INNER JOIN Usuario_Plan up ON u.id_usuario = up.id_usuario
+    WHERE up.id_plan = @id_plan;
+END;
+GO
+
+-- PROCEDIMIENTO PARA FILTRAR LOS PLANES ASOCIADO A UN COACH
+CREATE PROCEDURE SP_LISTAR_PLAN_POR_COACHS
+    @id_usuario INT
+AS
+BEGIN
+    SELECT p.id_plan, p.nombre, p.fechaInicio, p.fechaFin, p.cantSeries, p.estado
+    FROM PlanEntrenamiento p
+    INNER JOIN Usuario_Plan up ON p.id_plan = up.id_plan
+    WHERE up.id_usuario = @id_usuario;
+END;
+GO
