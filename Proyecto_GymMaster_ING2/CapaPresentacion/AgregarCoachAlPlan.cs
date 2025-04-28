@@ -22,9 +22,9 @@ namespace CapaPresentacion
         public AgregarCoachAlPlan(Usuario usuario, NuevoPlanEntrenamiento planEntrenamiento)
         {
             InitializeComponent();
-            CargarCoachs(); // Cargar datos cuando se abra el formulario
             usuarioActual = usuario;
             planEntrenamientoForm = planEntrenamiento;
+            CargarCoachs(); // Cargar datos cuando se abra el formulario
         }
 
         private void CargarCoachs()
