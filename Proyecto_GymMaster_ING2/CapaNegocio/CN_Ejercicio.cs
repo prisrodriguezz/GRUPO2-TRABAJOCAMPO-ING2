@@ -17,14 +17,6 @@ namespace CapaNegocio
         {
             return objCD_Ejercicio.Listar();
         }
-
-        // Método para agregar un nuevo ejercicio
-        
-
-        // Método para editar un ejercicio existente
-        
-
-        // Método para eliminar un ejercicio
         
     }
 }
