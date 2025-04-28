@@ -153,8 +153,6 @@ namespace CapaPresentacion
                 return;
             }
 
-            string mensaje = string.Empty;
-
             // Validaciones de campos vacíos
             if (string.IsNullOrWhiteSpace(textBoxNombrePlan.Text) ||
                 string.IsNullOrWhiteSpace(textBoxCantSeries.Text) ||
@@ -165,18 +163,9 @@ namespace CapaPresentacion
                 return;
             }
 
-            if (Convert.ToInt32(textBoxCantSeries.Text) <= 0)
-            {
-                MessageBox.Show("El campo 'Cantidad de Series' debe ser mayor a cero.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
+            string mensaje = string.Empty;
 
-            if (dateTimePicker2.Value <= dateTimePicker1.Value)
-            {
-                MessageBox.Show("La fecha de fin no puede ser menor o igual a la fecha de inicio.", "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
+            //Crear el objeto PlanEntrenamiento con los datos ingresados
             PlanEntrenamiento planEntre = new PlanEntrenamiento()
             {
                 id_plan = Convert.ToInt32(textBoxID.Text),
@@ -189,12 +178,15 @@ namespace CapaPresentacion
             
             if(textBoxID.Text == "0") //crea nuevo plan
             {
+                //Crear la instancia de la capa de negocio
                 CN_PlanEntrenamiento planNegocio = new CN_PlanEntrenamiento();
                 int idPlanGenerado = planNegocio.Agregar(planEntre, out mensaje);
 
                 if (idPlanGenerado == 0)
                 {
+                    // No se pudo agregar: mostrar el mensaje que devolvió la capa de negocio
                     MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
                 else
                 {
@@ -238,6 +230,7 @@ namespace CapaPresentacion
                 if (idPlanModificado == 0)
                 {
                     MessageBox.Show(mensaje, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
                 else
                 {
