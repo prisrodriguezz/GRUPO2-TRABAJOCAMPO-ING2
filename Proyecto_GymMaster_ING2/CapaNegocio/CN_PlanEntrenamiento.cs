@@ -48,7 +48,7 @@ namespace CapaNegocio
                 return 0;
             }
 
-            // Si pasa todas las validaciones, llamar a la capa de datos
+            // Si pasa todas las validaciones, llama a la capa de datos
             return objCD_PlanEntrenamiento.Agregar(plan, out mensaje);
         }
 
