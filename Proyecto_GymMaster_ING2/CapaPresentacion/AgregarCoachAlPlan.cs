@@ -24,9 +24,10 @@ namespace CapaPresentacion
             InitializeComponent();
             usuarioActual = usuario;
             planEntrenamientoForm = planEntrenamiento;
+            CargarCoachs(); // Cargar datos cuando se abra el formulario
         }
 
-        private void AgregarCoachAlPlan_Load(object sender, EventArgs e)
+        private void CargarCoachs()
         {
             List<Usuario> listausuario = new CN_usuario().Listar();
             dgvdataAgregarCoach.Rows.Clear(); // Limpia el DataGrid antes de actualizar
@@ -40,7 +41,9 @@ namespace CapaPresentacion
                         item.email,fechaNacimiento.ToString("dd/MM/yyyy"),item.telefono});
                 }
             }
-
+        }
+        private void AgregarCoachAlPlan_Load(object sender, EventArgs e)
+        {
             // Cambia el color de texto de la fila seleccionada en el DataGridView
             dgvdataAgregarCoach.DefaultCellStyle.SelectionForeColor = Color.Black;
             dgvdataAgregarCoach.DefaultCellStyle.SelectionBackColor = Color.Silver; // Color gris para la selección de celdas

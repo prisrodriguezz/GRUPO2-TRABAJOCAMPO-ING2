@@ -48,8 +48,10 @@ namespace CapaDatos
             int idPlanGenerado = 0;
             mensaje = string.Empty;
 
+            // Abre una conexión a la base de datos
             using (SqlConnection conexion = new SqlConnection(Conexion.cadena))
             {
+                // Ejecuta el procedimiento que esta en la BD
                 SqlCommand cmd = new SqlCommand("SP_AGREGAR_PLAN_ENTRENAMIENTO", conexion);
                 cmd.CommandType = CommandType.StoredProcedure;
 
@@ -74,7 +76,7 @@ namespace CapaDatos
 
                 // Obtener los valores de salida
                 idPlanGenerado = Convert.ToInt32(respuestaParam.Value);  // El ID del plan generado
-                mensaje = mensajeParam.Value.ToString();
+                mensaje = mensajeParam.Value.ToString(); // Un mensaje de éxito o error
             }
 
             return idPlanGenerado;  // Retorna el ID del plan generado

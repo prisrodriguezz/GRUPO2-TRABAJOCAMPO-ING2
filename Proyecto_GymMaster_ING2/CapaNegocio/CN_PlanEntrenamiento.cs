@@ -21,6 +21,34 @@ namespace CapaNegocio
         // Método para agregar un nuevo plan de entrenamiento
         public int Agregar(PlanEntrenamiento plan, out string mensaje)
         {
+            mensaje = string.Empty;
+
+            // Validaciones internas
+            if (string.IsNullOrWhiteSpace(plan.nombre))
+            {
+                mensaje = "El nombre del plan no puede estar vacío.";
+                return 0;
+            }
+
+            if (plan.fechaInicio.Date == plan.fechaFin.Date)
+            {
+                mensaje = "La fecha de inicio no puede ser igual a la fecha de fin.";
+                return 0;
+            }
+
+            if (plan.fechaInicio > plan.fechaFin)
+            {
+                mensaje = "La fecha de inicio no puede ser posterior a la fecha de fin.";
+                return 0;
+            }
+
+            if (plan.cantSeries <= 0)
+            {
+                mensaje = "La cantidad de series debe ser mayor a cero.";
+                return 0;
+            }
+
+            // Si pasa todas las validaciones, llama a la capa de datos
             return objCD_PlanEntrenamiento.Agregar(plan, out mensaje);
         }
 
@@ -45,6 +73,34 @@ namespace CapaNegocio
         // Método para editar un plan de entrenamiento 
         public int Editar(PlanEntrenamiento plan, out string mensaje)
         {
+            mensaje = string.Empty;
+
+            // Validaciones internas
+            if (string.IsNullOrWhiteSpace(plan.nombre))
+            {
+                mensaje = "El nombre del plan no puede estar vacío.";
+                return 0;
+            }
+
+            if (plan.fechaInicio.Date == plan.fechaFin.Date)
+            {
+                mensaje = "La fecha de inicio no puede ser igual a la fecha de fin.";
+                return 0;
+            }
+
+            if (plan.fechaInicio > plan.fechaFin)
+            {
+                mensaje = "La fecha de inicio no puede ser posterior a la fecha de fin.";
+                return 0;
+            }
+
+            if (plan.cantSeries <= 0)
+            {
+                mensaje = "La cantidad de series debe ser mayor a cero.";
+                return 0;
+            }
+
+            // Si pasa todas las validaciones, llamar a la capa de datos
             return objCD_PlanEntrenamiento.Editar(plan, out mensaje);
         }
 
