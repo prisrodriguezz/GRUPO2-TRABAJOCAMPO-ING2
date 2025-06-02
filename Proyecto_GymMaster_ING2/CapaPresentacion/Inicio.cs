@@ -11,6 +11,7 @@ using FontAwesome.Sharp;
 
 using CapaNegocio;
 using CapaEntidad;
+using System.Windows.Controls.Primitives;
 
 namespace CapaPresentacion
 {
@@ -90,6 +91,31 @@ namespace CapaPresentacion
             else
             {
                 errorProvider1.SetError(textBoxContraseña, "");
+            }
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (textBoxContraseña.UseSystemPasswordChar)
+            {
+                textBoxContraseña.UseSystemPasswordChar = false;
+                CBShowPass.Text = "Ocultar contraseña";
+            }
+            else
+            {
+                textBoxContraseña.UseSystemPasswordChar = true;
+                CBShowPass.Text = "Mostrar contraseña";
+            }
+           
+        }
+
+        private void textBoxDni_KeyDown(object sender, KeyEventArgs e)
+        {
+            // Permitir pegar con Ctrl + V
+            if (e.Control && e.KeyCode == Keys.V)
+            {
+                textBoxDni.Paste();
+                e.Handled = true;
             }
         }
     }

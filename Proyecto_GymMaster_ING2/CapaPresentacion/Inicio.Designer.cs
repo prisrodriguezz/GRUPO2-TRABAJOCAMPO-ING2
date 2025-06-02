@@ -42,6 +42,7 @@ namespace CapaPresentacion
             this.panel1 = new System.Windows.Forms.Panel();
             this.BCancelar = new FontAwesome.Sharp.IconButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.CBShowPass = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -113,6 +114,7 @@ namespace CapaPresentacion
             this.textBoxDni.Size = new System.Drawing.Size(439, 34);
             this.textBoxDni.TabIndex = 7;
             this.textBoxDni.TextChanged += new System.EventHandler(this.TextBoxDni_TextChanged);
+            this.textBoxDni.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxDni_KeyDown);
             this.textBoxDni.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxDni_KeyPress);
             // 
             // label4
@@ -149,9 +151,9 @@ namespace CapaPresentacion
             this.textBoxContraseña.Location = new System.Drawing.Point(113, 434);
             this.textBoxContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContraseña.Name = "textBoxContraseña";
-            this.textBoxContraseña.PasswordChar = '*';
             this.textBoxContraseña.Size = new System.Drawing.Size(439, 34);
             this.textBoxContraseña.TabIndex = 9;
+            this.textBoxContraseña.UseSystemPasswordChar = true;
             this.textBoxContraseña.TextChanged += new System.EventHandler(this.TextBoxContraseña_TextChanged);
             // 
             // BIngresar
@@ -167,7 +169,7 @@ namespace CapaPresentacion
             this.BIngresar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BIngresar.IconSize = 30;
             this.BIngresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BIngresar.Location = new System.Drawing.Point(136, 514);
+            this.BIngresar.Location = new System.Drawing.Point(130, 540);
             this.BIngresar.Margin = new System.Windows.Forms.Padding(4);
             this.BIngresar.Name = "BIngresar";
             this.BIngresar.Size = new System.Drawing.Size(154, 59);
@@ -181,6 +183,7 @@ namespace CapaPresentacion
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel1.Controls.Add(this.CBShowPass);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.BCancelar);
             this.panel1.Controls.Add(this.BIngresar);
@@ -205,7 +208,7 @@ namespace CapaPresentacion
             this.BCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BCancelar.IconSize = 30;
             this.BCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BCancelar.Location = new System.Drawing.Point(359, 514);
+            this.BCancelar.Location = new System.Drawing.Point(353, 540);
             this.BCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.BCancelar.Name = "BCancelar";
             this.BCancelar.Size = new System.Drawing.Size(160, 59);
@@ -219,6 +222,19 @@ namespace CapaPresentacion
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // CBShowPass
+            // 
+            this.CBShowPass.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.CBShowPass.AutoSize = true;
+            this.CBShowPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBShowPass.Location = new System.Drawing.Point(113, 484);
+            this.CBShowPass.Name = "CBShowPass";
+            this.CBShowPass.Size = new System.Drawing.Size(195, 24);
+            this.CBShowPass.TabIndex = 14;
+            this.CBShowPass.Text = "Mostrar contraseña";
+            this.CBShowPass.UseVisualStyleBackColor = true;
+            this.CBShowPass.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Inicio
             // 
@@ -241,6 +257,7 @@ namespace CapaPresentacion
             this.TransparencyKey = System.Drawing.Color.Gold;
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,5 +277,6 @@ namespace CapaPresentacion
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton BCancelar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.CheckBox CBShowPass;
     }
 }
