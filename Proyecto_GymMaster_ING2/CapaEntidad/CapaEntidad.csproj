@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ejercicio.cs" />
+    <Compile Include="Membresia.cs" />
+    <Compile Include="PagoDetalle.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="PlanEjercicio.cs" />
     <Compile Include="planEntrenamiento.cs" />
