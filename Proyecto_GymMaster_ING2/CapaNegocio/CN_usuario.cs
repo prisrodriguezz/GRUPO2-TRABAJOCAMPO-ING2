@@ -16,5 +16,10 @@ namespace CapaNegocio
         public List<Usuario> Listar() {
             return objcd_usuario.Listar();
         }
+
+        public List<Usuario> ListarCoachs()
+        {
+            return objcd_usuario.ListarCoachs();
+        }
     }
 }
