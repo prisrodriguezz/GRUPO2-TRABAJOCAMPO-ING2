@@ -1,4 +1,45 @@
-# Ignorar carpeta de configuración de Visual Studio
+# Archivos de Visual Studio
 .vs/
+*.user
+*.suo
+
+# Archivos de build
+bin/
 obj/
+
+# Archivos de configuración
+*.userprefs
+*.csproj.user
+
+# Archivos de caché y temporales
+*.cache
+*.log
+*.pdb
+*.mdb
+*.tmp
+
+# Archivos de publicación
+publish/
+
+# Archivos del sistema
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Archivos de paquetes NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Archivos de Rider
+.idea/
+*.sln.iml
+
+# Otros
+*.dbmdl
+
 
