@@ -46,6 +46,7 @@
     <Compile Include="CD_Ejercicio.cs" />
     <Compile Include="CD_medioPago.cs" />
     <Compile Include="CD_membresia.cs" />
+    <Compile Include="CD_Pago.cs" />
     <Compile Include="CD_Permiso.cs" />
     <Compile Include="CD_PlanEntrenamiento.cs" />
     <Compile Include="CD_rol.cs" />
