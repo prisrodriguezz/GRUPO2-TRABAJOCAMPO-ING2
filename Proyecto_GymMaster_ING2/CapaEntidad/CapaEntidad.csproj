@@ -45,6 +45,7 @@
     <Compile Include="Ejercicio.cs" />
     <Compile Include="MedioPago.cs" />
     <Compile Include="Membresia.cs" />
+    <Compile Include="Pago.cs" />
     <Compile Include="PagoDetalle.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="PlanEjercicio.cs" />
