@@ -119,5 +119,9 @@ namespace CapaPresentacion
         {
             AbrirFormulario((IconMenuItem)sender, null, new ListaPlanesDeEntrenamiento(usuarioActual));
         }
+        private void menuAlumnos_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario((IconMenuItem)sender, null, new ListaAlumnos(usuarioActual));
+        }
     }
 }

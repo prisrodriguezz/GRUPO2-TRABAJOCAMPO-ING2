@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -78,6 +78,12 @@
     <Compile Include="AgregarCoachAlPlan.Designer.cs">
       <DependentUpon>AgregarCoachAlPlan.cs</DependentUpon>
     </Compile>
+    <Compile Include="DetalleDePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleDePago.Designer.cs">
+      <DependentUpon>DetalleDePago.cs</DependentUpon>
+    </Compile>
     <Compile Include="DetallesPlanEntrenamiento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaAlumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaAlumnos.Designer.cs">
+      <DependentUpon>ListaAlumnos.cs</DependentUpon>
     </Compile>
     <Compile Include="ListaPlanesDeEntrenamiento.cs">
       <SubType>Form</SubType>
@@ -125,11 +137,17 @@
     <EmbeddedResource Include="AgregarCoachAlPlan.resx">
       <DependentUpon>AgregarCoachAlPlan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DetalleDePago.resx">
+      <DependentUpon>DetalleDePago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DetallesPlanEntrenamiento.resx">
       <DependentUpon>DetallesPlanEntrenamiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaAlumnos.resx">
+      <DependentUpon>ListaAlumnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaPlanesDeEntrenamiento.resx">
       <DependentUpon>ListaPlanesDeEntrenamiento.cs</DependentUpon>

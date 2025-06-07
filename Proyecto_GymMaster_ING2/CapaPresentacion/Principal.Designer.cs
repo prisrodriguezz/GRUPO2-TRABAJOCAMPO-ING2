@@ -103,7 +103,6 @@ namespace CapaPresentacion
             // menuAlumnos
             // 
             this.menuAlumnos.AutoSize = false;
-            this.menuAlumnos.Enabled = false;
             this.menuAlumnos.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuAlumnos.IconChar = FontAwesome.Sharp.IconChar.UserGroup;
             this.menuAlumnos.IconColor = System.Drawing.Color.Black;
@@ -114,6 +113,7 @@ namespace CapaPresentacion
             this.menuAlumnos.Name = "menuAlumnos";
             this.menuAlumnos.Size = new System.Drawing.Size(220, 54);
             this.menuAlumnos.Text = "Alumnos";
+            this.menuAlumnos.Click += new System.EventHandler(this.menuAlumnos_Click);
             // 
             // menuPlanes
             // 

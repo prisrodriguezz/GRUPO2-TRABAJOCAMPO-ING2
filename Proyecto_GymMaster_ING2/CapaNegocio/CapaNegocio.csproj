@@ -45,6 +45,7 @@
     <Compile Include="CN_Alumno.cs" />
     <Compile Include="CN_Ejercicio.cs" />
     <Compile Include="CN_medioPago.cs" />
+    <Compile Include="CN_membresia.cs" />
     <Compile Include="CN_pago.cs" />
     <Compile Include="CN_Permiso.cs" />
     <Compile Include="CN_PlanEntrenamiento.cs" />

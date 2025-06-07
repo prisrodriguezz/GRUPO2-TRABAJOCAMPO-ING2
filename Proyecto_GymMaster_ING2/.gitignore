@@ -7,18 +7,18 @@
 bin/
 obj/
 
-# Archivos de configuración
+# Archivos de configuraciï¿½n
 *.userprefs
 *.csproj.user
 
-# Archivos de caché y temporales
+# Archivos de cachï¿½ y temporales
 *.cache
 *.log
 *.pdb
 *.mdb
 *.tmp
 
-# Archivos de publicación
+# Archivos de publicaciï¿½n
 publish/
 
 # Archivos del sistema
@@ -41,5 +41,3 @@ artifacts/
 
 # Otros
 *.dbmdl
-
-

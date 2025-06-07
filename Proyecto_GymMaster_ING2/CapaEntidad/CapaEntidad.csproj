@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Alumno.cs" />
     <Compile Include="Ejercicio.cs" />
+    <Compile Include="FechaAdeudada.cs" />
     <Compile Include="MedioPago.cs" />
     <Compile Include="Membresia.cs" />
     <Compile Include="Pago.cs" />
