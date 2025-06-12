@@ -61,10 +61,10 @@ namespace CapaPresentacion
             this.textBoxBusqueda = new System.Windows.Forms.TextBox();
             this.LBuscar = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBoxFecha = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxFecha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -75,9 +75,10 @@ namespace CapaPresentacion
             this.labelTITULO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelTITULO.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTITULO.ForeColor = System.Drawing.Color.OrangeRed;
-            this.labelTITULO.Location = new System.Drawing.Point(12, 5);
+            this.labelTITULO.Location = new System.Drawing.Point(16, 6);
+            this.labelTITULO.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTITULO.Name = "labelTITULO";
-            this.labelTITULO.Size = new System.Drawing.Size(866, 40);
+            this.labelTITULO.Size = new System.Drawing.Size(1154, 49);
             this.labelTITULO.TabIndex = 28;
             this.labelTITULO.Text = "LISTA DE ALUMNOS";
             this.labelTITULO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -94,9 +95,10 @@ namespace CapaPresentacion
             this.iconButton2.IconColor = System.Drawing.Color.White;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 25;
-            this.iconButton2.Location = new System.Drawing.Point(832, 13);
+            this.iconButton2.Location = new System.Drawing.Point(1109, 16);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(35, 24);
+            this.iconButton2.Size = new System.Drawing.Size(47, 30);
             this.iconButton2.TabIndex = 34;
             this.iconButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton2.UseVisualStyleBackColor = false;
@@ -114,9 +116,10 @@ namespace CapaPresentacion
             this.iconButton1.IconColor = System.Drawing.Color.White;
             this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton1.IconSize = 20;
-            this.iconButton1.Location = new System.Drawing.Point(781, 13);
+            this.iconButton1.Location = new System.Drawing.Point(1041, 16);
+            this.iconButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(35, 24);
+            this.iconButton1.Size = new System.Drawing.Size(47, 30);
             this.iconButton1.TabIndex = 33;
             this.iconButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.iconButton1.UseVisualStyleBackColor = false;
@@ -127,9 +130,10 @@ namespace CapaPresentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(8, 450);
+            this.label3.Location = new System.Drawing.Point(11, 554);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 20);
+            this.label3.Size = new System.Drawing.Size(205, 25);
             this.label3.TabIndex = 35;
             this.label3.Text = "Cantidad de alumnos:";
             // 
@@ -138,9 +142,10 @@ namespace CapaPresentacion
             this.labelCantidad.AutoSize = true;
             this.labelCantidad.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCantidad.ForeColor = System.Drawing.Color.Black;
-            this.labelCantidad.Location = new System.Drawing.Point(165, 450);
+            this.labelCantidad.Location = new System.Drawing.Point(220, 554);
+            this.labelCantidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCantidad.Name = "labelCantidad";
-            this.labelCantidad.Size = new System.Drawing.Size(77, 20);
+            this.labelCantidad.Size = new System.Drawing.Size(97, 24);
             this.labelCantidad.TabIndex = 36;
             this.labelCantidad.Text = "0 alumnos";
             // 
@@ -157,9 +162,10 @@ namespace CapaPresentacion
             this.BNuevoAlumno.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BNuevoAlumno.IconSize = 30;
             this.BNuevoAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BNuevoAlumno.Location = new System.Drawing.Point(724, 451);
+            this.BNuevoAlumno.Location = new System.Drawing.Point(965, 555);
+            this.BNuevoAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BNuevoAlumno.Name = "BNuevoAlumno";
-            this.BNuevoAlumno.Size = new System.Drawing.Size(154, 45);
+            this.BNuevoAlumno.Size = new System.Drawing.Size(205, 55);
             this.BNuevoAlumno.TabIndex = 40;
             this.BNuevoAlumno.Text = "NUEVO ALUMNO";
             this.BNuevoAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -205,7 +211,8 @@ namespace CapaPresentacion
             dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdata.DefaultCellStyle = dataGridViewCellStyle21;
-            this.dgvdata.Location = new System.Drawing.Point(12, 51);
+            this.dgvdata.Location = new System.Drawing.Point(16, 63);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -221,7 +228,7 @@ namespace CapaPresentacion
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dgvdata.RowTemplate.Height = 30;
             this.dgvdata.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdata.Size = new System.Drawing.Size(866, 394);
+            this.dgvdata.Size = new System.Drawing.Size(1155, 485);
             this.dgvdata.TabIndex = 41;
             this.dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdata_CellContentClick);
             this.dgvdata.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvdata_ColumnHeaderMouseClick);
@@ -233,12 +240,14 @@ namespace CapaPresentacion
             dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
             this.verFicha.DefaultCellStyle = dataGridViewCellStyle14;
             this.verFicha.HeaderText = "";
+            this.verFicha.MinimumWidth = 6;
             this.verFicha.Name = "verFicha";
             this.verFicha.ReadOnly = true;
             // 
             // idAlumno
             // 
             this.idAlumno.HeaderText = "ID";
+            this.idAlumno.MinimumWidth = 6;
             this.idAlumno.Name = "idAlumno";
             this.idAlumno.ReadOnly = true;
             this.idAlumno.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -250,6 +259,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
             this.Nombre.DefaultCellStyle = dataGridViewCellStyle15;
             this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -257,6 +267,7 @@ namespace CapaPresentacion
             // Apellido
             // 
             this.Apellido.HeaderText = "Apellido";
+            this.Apellido.MinimumWidth = 6;
             this.Apellido.Name = "Apellido";
             this.Apellido.ReadOnly = true;
             this.Apellido.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -267,6 +278,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
             this.dni.DefaultCellStyle = dataGridViewCellStyle16;
             this.dni.HeaderText = "DNI";
+            this.dni.MinimumWidth = 6;
             this.dni.Name = "dni";
             this.dni.ReadOnly = true;
             this.dni.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -277,6 +289,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
             this.email.DefaultCellStyle = dataGridViewCellStyle17;
             this.email.HeaderText = "E-mail";
+            this.email.MinimumWidth = 6;
             this.email.Name = "email";
             this.email.ReadOnly = true;
             this.email.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -287,6 +300,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
             this.FechaNacimiento.DefaultCellStyle = dataGridViewCellStyle18;
             this.FechaNacimiento.HeaderText = "Fecha Nacimiento";
+            this.FechaNacimiento.MinimumWidth = 6;
             this.FechaNacimiento.Name = "FechaNacimiento";
             this.FechaNacimiento.ReadOnly = true;
             this.FechaNacimiento.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -297,6 +311,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle19;
             this.dataGridViewTextBoxColumn4.HeaderText = "Telefono";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             this.dataGridViewTextBoxColumn4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -304,6 +319,7 @@ namespace CapaPresentacion
             // sexo
             // 
             this.sexo.HeaderText = "Sexo";
+            this.sexo.MinimumWidth = 6;
             this.sexo.Name = "sexo";
             this.sexo.ReadOnly = true;
             this.sexo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -314,6 +330,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
             this.Estado.DefaultCellStyle = dataGridViewCellStyle20;
             this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 6;
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
             this.Estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -324,9 +341,10 @@ namespace CapaPresentacion
             this.LnombreColumna.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.LnombreColumna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnombreColumna.ForeColor = System.Drawing.Color.Red;
-            this.LnombreColumna.Location = new System.Drawing.Point(463, 19);
+            this.LnombreColumna.Location = new System.Drawing.Point(617, 23);
+            this.LnombreColumna.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LnombreColumna.Name = "LnombreColumna";
-            this.LnombreColumna.Size = new System.Drawing.Size(102, 16);
+            this.LnombreColumna.Size = new System.Drawing.Size(123, 20);
             this.LnombreColumna.TabIndex = 53;
             this.LnombreColumna.Text = "Nombre campo";
             this.LnombreColumna.Visible = false;
@@ -334,9 +352,10 @@ namespace CapaPresentacion
             // textBoxBusqueda
             // 
             this.textBoxBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBusqueda.Location = new System.Drawing.Point(595, 14);
+            this.textBoxBusqueda.Location = new System.Drawing.Point(793, 17);
+            this.textBoxBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxBusqueda.Name = "textBoxBusqueda";
-            this.textBoxBusqueda.Size = new System.Drawing.Size(180, 24);
+            this.textBoxBusqueda.Size = new System.Drawing.Size(239, 29);
             this.textBoxBusqueda.TabIndex = 51;
             // 
             // LBuscar
@@ -344,9 +363,10 @@ namespace CapaPresentacion
             this.LBuscar.AutoSize = true;
             this.LBuscar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.LBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBuscar.Location = new System.Drawing.Point(389, 19);
+            this.LBuscar.Location = new System.Drawing.Point(519, 23);
+            this.LBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBuscar.Name = "LBuscar";
-            this.LBuscar.Size = new System.Drawing.Size(76, 16);
+            this.LBuscar.Size = new System.Drawing.Size(97, 20);
             this.LBuscar.TabIndex = 52;
             this.LBuscar.Text = "Buscar por:";
             this.LBuscar.Visible = false;
@@ -357,40 +377,22 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBoxFecha);
-            this.groupBox1.Location = new System.Drawing.Point(303, 451);
+            this.groupBox1.Location = new System.Drawing.Point(404, 555);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(289, 45);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(385, 55);
             this.groupBox1.TabIndex = 54;
             this.groupBox1.TabStop = false;
-            // 
-            // textBoxFecha
-            // 
-            this.textBoxFecha.BackColor = System.Drawing.Color.MistyRose;
-            this.textBoxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxFecha.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxFecha.Location = new System.Drawing.Point(6, 14);
-            this.textBoxFecha.Name = "textBoxFecha";
-            this.textBoxFecha.ReadOnly = true;
-            this.textBoxFecha.Size = new System.Drawing.Size(23, 22);
-            this.textBoxFecha.TabIndex = 64;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(31, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
-            this.label1.TabIndex = 55;
-            this.label1.Text = "ADEUDAN CUOTAS";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(186, 19);
+            this.label2.Location = new System.Drawing.Point(248, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 13);
+            this.label2.Size = new System.Drawing.Size(115, 17);
             this.label2.TabIndex = 65;
             this.label2.Text = "CUOTA AL DIA";
             // 
@@ -399,17 +401,41 @@ namespace CapaPresentacion
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBox1.Location = new System.Drawing.Point(161, 14);
+            this.textBox1.Location = new System.Drawing.Point(215, 17);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(23, 22);
+            this.textBox1.Size = new System.Drawing.Size(29, 26);
             this.textBox1.TabIndex = 66;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(150, 17);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "ADEUDAN CUOTAS";
+            // 
+            // textBoxFecha
+            // 
+            this.textBoxFecha.BackColor = System.Drawing.Color.MistyRose;
+            this.textBoxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFecha.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBoxFecha.Location = new System.Drawing.Point(8, 17);
+            this.textBoxFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxFecha.Name = "textBoxFecha";
+            this.textBoxFecha.ReadOnly = true;
+            this.textBoxFecha.Size = new System.Drawing.Size(29, 26);
+            this.textBoxFecha.TabIndex = 64;
             // 
             // ListaAlumnos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 507);
+            this.ClientSize = new System.Drawing.Size(1187, 624);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LnombreColumna);
             this.Controls.Add(this.textBoxBusqueda);
@@ -422,6 +448,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.labelTITULO);
             this.Controls.Add(this.dgvdata);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ListaAlumnos";
             this.Text = "ListaAlumnos";
             this.Load += new System.EventHandler(this.ListaAlumnos_Load);

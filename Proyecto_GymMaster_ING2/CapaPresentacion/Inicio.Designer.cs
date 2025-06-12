@@ -40,9 +40,9 @@ namespace CapaPresentacion
             this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.BIngresar = new FontAwesome.Sharp.IconButton();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.CBShowPass = new System.Windows.Forms.CheckBox();
             this.BCancelar = new FontAwesome.Sharp.IconButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.CBShowPass = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -195,6 +195,20 @@ namespace CapaPresentacion
             this.panel1.Size = new System.Drawing.Size(667, 738);
             this.panel1.TabIndex = 12;
             // 
+            // CBShowPass
+            // 
+            this.CBShowPass.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
+            this.CBShowPass.AutoSize = true;
+            this.CBShowPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CBShowPass.ForeColor = System.Drawing.Color.White;
+            this.CBShowPass.Location = new System.Drawing.Point(113, 484);
+            this.CBShowPass.Name = "CBShowPass";
+            this.CBShowPass.Size = new System.Drawing.Size(195, 24);
+            this.CBShowPass.TabIndex = 14;
+            this.CBShowPass.Text = "Mostrar contraseña";
+            this.CBShowPass.UseVisualStyleBackColor = true;
+            this.CBShowPass.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
             // BCancelar
             // 
             this.BCancelar.BackColor = System.Drawing.Color.Red;
@@ -222,19 +236,6 @@ namespace CapaPresentacion
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
-            // 
-            // CBShowPass
-            // 
-            this.CBShowPass.AccessibleRole = System.Windows.Forms.AccessibleRole.TitleBar;
-            this.CBShowPass.AutoSize = true;
-            this.CBShowPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CBShowPass.Location = new System.Drawing.Point(113, 484);
-            this.CBShowPass.Name = "CBShowPass";
-            this.CBShowPass.Size = new System.Drawing.Size(195, 24);
-            this.CBShowPass.TabIndex = 14;
-            this.CBShowPass.Text = "Mostrar contraseña";
-            this.CBShowPass.UseVisualStyleBackColor = true;
-            this.CBShowPass.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // Inicio
             // 

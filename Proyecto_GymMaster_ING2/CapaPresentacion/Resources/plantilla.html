@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page Design</title>
+    <style>
+        table.border {
+            border-collapse: collapse;
+        }
+
+            table.border th {
+                text-align: center;
+                padding: 5px;
+                border: 1px solid black;
+            }
+
+            table.border td {
+                text-align: center;
+                padding: 5px;
+                border: 1px solid black;
+            }
+    </style>
+</head>
+<body>
+    <table border="0" style="width:100%">
+        <tr>
+
+            <td style="width:15%" valign="top"></td>
+            <td style="width:60%" valign="top" align="center">
+
+                <label style="font-size:20px;font-weight:bold;margin-bottom:10px">GIMNASIO GYMMASTER</label><br />
+                <div style="height:12px !important"></div>
+                <label style="font-size:11px;">Teléfono: 3794-234567</label><br />
+                <label style="font-size:11px;">Dirección: 9 de Julio 1449</label><br />
+            </td>
+            <td style="width:25%;" align="right" valign="top">
+                <table style="width:100%" class="border">
+                    <tr>
+                        <td align="center" style="background-color:#CACACA">
+                            <label style="font-size:15px;font-weight:bold">NRO FACTURA</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <label style="font-size:15px;font-weight:bold">@numeroFactura</label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div style="height:15px !important"></div>
+    <hr />
+
+    <table border="0" style="width:100%">
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">DNI Alumno:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@dniAlumno</label></td>
+        </tr>
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Nombre Alumno:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@nombreAlumno</label></td>
+        </tr>
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Fecha de pago:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@fecha</label></td>
+        </tr>
+    </table>
+
+    <div style="height:15px !important"></div>
+
+    <table border="0" style="width:100%">
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Coach a cargo:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@nombreCoach</label></td>
+        </tr>
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Plan de entrenamiento:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@nombrePlan</label></td>
+        </tr>
+    </table>
+
+    <div style="height:15px !important"></div>
+    <table style="width:100%;font-size:12px;" class="border">
+        <thead>
+            <tr style="background-color:#CACACA">
+                <th>Membresia</th>
+                <th>Periodo</th>
+                <th>Monto</th>
+            </tr>
+        </thead>
+        <tbody>
+            @filas
+        </tbody>
+    </table>
+
+    <div style="height:15px !important"></div>
+
+    <table border="0" style="width:100%">
+        <tr>
+            <td style="width:20%"><label style="font-size:12px;font-weight:bold">Medio de pago:</label></td>
+            <td style="width:20%"><label style="font-size:12px;">@nombreMedioPago</label></td>
+        </tr>
+    </table>
+
+    <div style="height:15px !important"></div>
+    <table style="width:50%; float: right; font-size:12px;" class="border">
+        <thead>
+            <tr style="background-color:#CACACA">
+                <th>Sub Total</th>
+                <th>Recargo</th>
+                <th>Monto Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@subtotal</td>
+                <td>@recargo</td>
+                <th>@montototal</th>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -76,12 +76,12 @@ namespace CapaPresentacion
         private void BNuevoAlumno_Click(object sender, EventArgs e)
         {
             //Modal para agregar nuevo alumno
-            /*
+            
             using (var modal = new NuevoAlumno())
             {
                 modal.AlumnoRegistrado += CargarAlumnos; // Evento
                 var resultado = modal.ShowDialog();
-            }*/
+            }
         }
 
         private void ListaAlumnos_Load(object sender, EventArgs e)

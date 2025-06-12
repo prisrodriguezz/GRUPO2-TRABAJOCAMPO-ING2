@@ -42,6 +42,15 @@ namespace CapaPresentacion
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvdata = new System.Windows.Forms.DataGridView();
+            this.label13 = new System.Windows.Forms.Label();
+            this.LBuscar = new System.Windows.Forms.Label();
+            this.textBoxBusqueda = new System.Windows.Forms.TextBox();
+            this.labelCantUsuarios = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.BNuevoUsuario = new FontAwesome.Sharp.IconButton();
+            this.BLimpiar = new FontAwesome.Sharp.IconButton();
+            this.BBuscar = new FontAwesome.Sharp.IconButton();
+            this.LnombreColumna = new System.Windows.Forms.Label();
             this.Editar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.eliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.idUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,15 +64,6 @@ namespace CapaPresentacion
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Contraseña = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label13 = new System.Windows.Forms.Label();
-            this.LBuscar = new System.Windows.Forms.Label();
-            this.textBoxBusqueda = new System.Windows.Forms.TextBox();
-            this.labelCantUsuarios = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.BNuevoUsuario = new FontAwesome.Sharp.IconButton();
-            this.BLimpiar = new FontAwesome.Sharp.IconButton();
-            this.BBuscar = new FontAwesome.Sharp.IconButton();
-            this.LnombreColumna = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +110,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdata.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvdata.Location = new System.Drawing.Point(16, 62);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
@@ -129,6 +129,146 @@ namespace CapaPresentacion
             this.dgvdata.Size = new System.Drawing.Size(1155, 485);
             this.dgvdata.TabIndex = 19;
             this.dgvdata.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvdata_ColumnHeaderMouseClick);
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label13.Location = new System.Drawing.Point(16, 6);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(1154, 49);
+            this.label13.TabIndex = 26;
+            this.label13.Text = "LISTA DE USUARIOS";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LBuscar
+            // 
+            this.LBuscar.AutoSize = true;
+            this.LBuscar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.LBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBuscar.Location = new System.Drawing.Point(535, 22);
+            this.LBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LBuscar.Name = "LBuscar";
+            this.LBuscar.Size = new System.Drawing.Size(97, 20);
+            this.LBuscar.TabIndex = 27;
+            this.LBuscar.Text = "Buscar por:";
+            this.LBuscar.Visible = false;
+            // 
+            // textBoxBusqueda
+            // 
+            this.textBoxBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBusqueda.Location = new System.Drawing.Point(793, 16);
+            this.textBoxBusqueda.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBusqueda.Name = "textBoxBusqueda";
+            this.textBoxBusqueda.Size = new System.Drawing.Size(239, 29);
+            this.textBoxBusqueda.TabIndex = 26;
+            // 
+            // labelCantUsuarios
+            // 
+            this.labelCantUsuarios.AutoSize = true;
+            this.labelCantUsuarios.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCantUsuarios.ForeColor = System.Drawing.Color.Black;
+            this.labelCantUsuarios.Location = new System.Drawing.Point(220, 554);
+            this.labelCantUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCantUsuarios.Name = "labelCantUsuarios";
+            this.labelCantUsuarios.Size = new System.Drawing.Size(96, 24);
+            this.labelCantUsuarios.TabIndex = 38;
+            this.labelCantUsuarios.Text = "0 usuarios";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.Black;
+            this.label16.Location = new System.Drawing.Point(12, 554);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(204, 25);
+            this.label16.TabIndex = 37;
+            this.label16.Text = "Cantidad de usuarios:";
+            // 
+            // BNuevoUsuario
+            // 
+            this.BNuevoUsuario.BackColor = System.Drawing.Color.Green;
+            this.BNuevoUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BNuevoUsuario.Enabled = false;
+            this.BNuevoUsuario.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BNuevoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BNuevoUsuario.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BNuevoUsuario.ForeColor = System.Drawing.Color.White;
+            this.BNuevoUsuario.IconChar = FontAwesome.Sharp.IconChar.Plus;
+            this.BNuevoUsuario.IconColor = System.Drawing.Color.White;
+            this.BNuevoUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BNuevoUsuario.IconSize = 30;
+            this.BNuevoUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BNuevoUsuario.Location = new System.Drawing.Point(965, 554);
+            this.BNuevoUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.BNuevoUsuario.Name = "BNuevoUsuario";
+            this.BNuevoUsuario.Size = new System.Drawing.Size(205, 55);
+            this.BNuevoUsuario.TabIndex = 39;
+            this.BNuevoUsuario.Text = "NUEVO USUARIO";
+            this.BNuevoUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BNuevoUsuario.UseVisualStyleBackColor = false;
+            this.BNuevoUsuario.Click += new System.EventHandler(this.BNuevoUsuario_Click);
+            // 
+            // BLimpiar
+            // 
+            this.BLimpiar.BackColor = System.Drawing.Color.DodgerBlue;
+            this.BLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BLimpiar.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BLimpiar.ForeColor = System.Drawing.Color.White;
+            this.BLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.BLimpiar.IconColor = System.Drawing.Color.White;
+            this.BLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BLimpiar.IconSize = 25;
+            this.BLimpiar.Location = new System.Drawing.Point(1109, 16);
+            this.BLimpiar.Margin = new System.Windows.Forms.Padding(4);
+            this.BLimpiar.Name = "BLimpiar";
+            this.BLimpiar.Size = new System.Drawing.Size(47, 30);
+            this.BLimpiar.TabIndex = 29;
+            this.BLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BLimpiar.UseVisualStyleBackColor = false;
+            this.BLimpiar.Click += new System.EventHandler(this.BLimpiar_Click);
+            // 
+            // BBuscar
+            // 
+            this.BBuscar.BackColor = System.Drawing.Color.LimeGreen;
+            this.BBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BBuscar.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BBuscar.ForeColor = System.Drawing.Color.White;
+            this.BBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.BBuscar.IconColor = System.Drawing.Color.White;
+            this.BBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BBuscar.IconSize = 20;
+            this.BBuscar.Location = new System.Drawing.Point(1041, 16);
+            this.BBuscar.Margin = new System.Windows.Forms.Padding(4);
+            this.BBuscar.Name = "BBuscar";
+            this.BBuscar.Size = new System.Drawing.Size(47, 30);
+            this.BBuscar.TabIndex = 28;
+            this.BBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.BBuscar.UseVisualStyleBackColor = false;
+            this.BBuscar.Click += new System.EventHandler(this.BBuscar_Click);
+            // 
+            // LnombreColumna
+            // 
+            this.LnombreColumna.AutoSize = true;
+            this.LnombreColumna.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.LnombreColumna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LnombreColumna.ForeColor = System.Drawing.Color.Red;
+            this.LnombreColumna.Location = new System.Drawing.Point(633, 22);
+            this.LnombreColumna.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LnombreColumna.Name = "LnombreColumna";
+            this.LnombreColumna.Size = new System.Drawing.Size(123, 20);
+            this.LnombreColumna.TabIndex = 40;
+            this.LnombreColumna.Text = "Nombre campo";
+            this.LnombreColumna.Visible = false;
             // 
             // Editar
             // 
@@ -158,7 +298,7 @@ namespace CapaPresentacion
             this.idUsuario.ReadOnly = true;
             this.idUsuario.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.idUsuario.Visible = false;
-            this.idUsuario.Width = 72;
+            this.idUsuario.Width = 86;
             // 
             // Nombre
             // 
@@ -235,6 +375,7 @@ namespace CapaPresentacion
             this.horario.MinimumWidth = 6;
             this.horario.Name = "horario";
             this.horario.ReadOnly = true;
+            this.horario.Visible = false;
             this.horario.Width = 71;
             // 
             // Rol
@@ -269,147 +410,7 @@ namespace CapaPresentacion
             this.Contraseña.ReadOnly = true;
             this.Contraseña.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Contraseña.Visible = false;
-            this.Contraseña.Width = 83;
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label13.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label13.Location = new System.Drawing.Point(16, 6);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(1154, 49);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "LISTA DE USUARIOS";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // LBuscar
-            // 
-            this.LBuscar.AutoSize = true;
-            this.LBuscar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.LBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBuscar.Location = new System.Drawing.Point(535, 22);
-            this.LBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LBuscar.Name = "LBuscar";
-            this.LBuscar.Size = new System.Drawing.Size(97, 20);
-            this.LBuscar.TabIndex = 27;
-            this.LBuscar.Text = "Buscar por:";
-            this.LBuscar.Visible = false;
-            // 
-            // textBoxBusqueda
-            // 
-            this.textBoxBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBusqueda.Location = new System.Drawing.Point(793, 16);
-            this.textBoxBusqueda.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBoxBusqueda.Name = "textBoxBusqueda";
-            this.textBoxBusqueda.Size = new System.Drawing.Size(239, 29);
-            this.textBoxBusqueda.TabIndex = 26;
-            // 
-            // labelCantUsuarios
-            // 
-            this.labelCantUsuarios.AutoSize = true;
-            this.labelCantUsuarios.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCantUsuarios.ForeColor = System.Drawing.Color.Black;
-            this.labelCantUsuarios.Location = new System.Drawing.Point(220, 554);
-            this.labelCantUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelCantUsuarios.Name = "labelCantUsuarios";
-            this.labelCantUsuarios.Size = new System.Drawing.Size(96, 24);
-            this.labelCantUsuarios.TabIndex = 38;
-            this.labelCantUsuarios.Text = "0 usuarios";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(12, 554);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(204, 25);
-            this.label16.TabIndex = 37;
-            this.label16.Text = "Cantidad de usuarios:";
-            // 
-            // BNuevoUsuario
-            // 
-            this.BNuevoUsuario.BackColor = System.Drawing.Color.Green;
-            this.BNuevoUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BNuevoUsuario.Enabled = false;
-            this.BNuevoUsuario.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BNuevoUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BNuevoUsuario.Font = new System.Drawing.Font("Microsoft PhagsPa", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BNuevoUsuario.ForeColor = System.Drawing.Color.White;
-            this.BNuevoUsuario.IconChar = FontAwesome.Sharp.IconChar.Plus;
-            this.BNuevoUsuario.IconColor = System.Drawing.Color.White;
-            this.BNuevoUsuario.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BNuevoUsuario.IconSize = 30;
-            this.BNuevoUsuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BNuevoUsuario.Location = new System.Drawing.Point(965, 554);
-            this.BNuevoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BNuevoUsuario.Name = "BNuevoUsuario";
-            this.BNuevoUsuario.Size = new System.Drawing.Size(205, 55);
-            this.BNuevoUsuario.TabIndex = 39;
-            this.BNuevoUsuario.Text = "NUEVO USUARIO";
-            this.BNuevoUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BNuevoUsuario.UseVisualStyleBackColor = false;
-            this.BNuevoUsuario.Click += new System.EventHandler(this.BNuevoUsuario_Click);
-            // 
-            // BLimpiar
-            // 
-            this.BLimpiar.BackColor = System.Drawing.Color.DodgerBlue;
-            this.BLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BLimpiar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BLimpiar.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BLimpiar.ForeColor = System.Drawing.Color.White;
-            this.BLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.BLimpiar.IconColor = System.Drawing.Color.White;
-            this.BLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BLimpiar.IconSize = 25;
-            this.BLimpiar.Location = new System.Drawing.Point(1109, 16);
-            this.BLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BLimpiar.Name = "BLimpiar";
-            this.BLimpiar.Size = new System.Drawing.Size(47, 30);
-            this.BLimpiar.TabIndex = 29;
-            this.BLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BLimpiar.UseVisualStyleBackColor = false;
-            this.BLimpiar.Click += new System.EventHandler(this.BLimpiar_Click);
-            // 
-            // BBuscar
-            // 
-            this.BBuscar.BackColor = System.Drawing.Color.LimeGreen;
-            this.BBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BBuscar.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BBuscar.ForeColor = System.Drawing.Color.White;
-            this.BBuscar.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.BBuscar.IconColor = System.Drawing.Color.White;
-            this.BBuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BBuscar.IconSize = 20;
-            this.BBuscar.Location = new System.Drawing.Point(1041, 16);
-            this.BBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.BBuscar.Name = "BBuscar";
-            this.BBuscar.Size = new System.Drawing.Size(47, 30);
-            this.BBuscar.TabIndex = 28;
-            this.BBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BBuscar.UseVisualStyleBackColor = false;
-            this.BBuscar.Click += new System.EventHandler(this.BBuscar_Click);
-            // 
-            // LnombreColumna
-            // 
-            this.LnombreColumna.AutoSize = true;
-            this.LnombreColumna.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.LnombreColumna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LnombreColumna.ForeColor = System.Drawing.Color.Red;
-            this.LnombreColumna.Location = new System.Drawing.Point(633, 22);
-            this.LnombreColumna.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LnombreColumna.Name = "LnombreColumna";
-            this.LnombreColumna.Size = new System.Drawing.Size(123, 20);
-            this.LnombreColumna.TabIndex = 40;
-            this.LnombreColumna.Text = "Nombre campo";
-            this.LnombreColumna.Visible = false;
+            this.Contraseña.Width = 101;
             // 
             // Usuarios
             // 
@@ -429,7 +430,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label13);
             this.Controls.Add(this.dgvdata);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Usuarios";
             this.Text = "NuevoUsuario";
             this.Load += new System.EventHandler(this.Usuarios_Load);
