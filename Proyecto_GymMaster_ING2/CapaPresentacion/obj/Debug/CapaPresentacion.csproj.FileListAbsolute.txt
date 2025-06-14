@@ -88,3 +88,5 @@ C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\Cap
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\bin\Debug\itextsharp.xml
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.CobrarCuotaAlumno.resources
 C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.NuevoAlumno.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.FichaAlumno.resources
+C:\Users\priis\Source\Repos\GRUPO2-TRABAJOCAMPO-ING2\Proyecto_GymMaster_ING2\CapaPresentacion\obj\Debug\CapaPresentacion.ListaPagosPorAlumno.resources

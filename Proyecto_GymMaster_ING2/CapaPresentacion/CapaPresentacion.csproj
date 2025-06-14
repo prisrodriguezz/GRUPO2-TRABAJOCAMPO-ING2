@@ -105,6 +105,12 @@
     <Compile Include="DetallesPlanEntrenamiento.Designer.cs">
       <DependentUpon>DetallesPlanEntrenamiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="FichaAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FichaAlumno.Designer.cs">
+      <DependentUpon>FichaAlumno.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,6 +122,12 @@
     </Compile>
     <Compile Include="ListaAlumnos.Designer.cs">
       <DependentUpon>ListaAlumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPagosPorAlumno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListaPagosPorAlumno.Designer.cs">
+      <DependentUpon>ListaPagosPorAlumno.cs</DependentUpon>
     </Compile>
     <Compile Include="ListaPlanesDeEntrenamiento.cs">
       <SubType>Form</SubType>
@@ -167,11 +179,17 @@
     <EmbeddedResource Include="DetallesPlanEntrenamiento.resx">
       <DependentUpon>DetallesPlanEntrenamiento.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FichaAlumno.resx">
+      <DependentUpon>FichaAlumno.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaAlumnos.resx">
       <DependentUpon>ListaAlumnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListaPagosPorAlumno.resx">
+      <DependentUpon>ListaPagosPorAlumno.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListaPlanesDeEntrenamiento.resx">
       <DependentUpon>ListaPlanesDeEntrenamiento.cs</DependentUpon>
@@ -243,6 +261,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\plantilla.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\siluetaPerfilPersona.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
