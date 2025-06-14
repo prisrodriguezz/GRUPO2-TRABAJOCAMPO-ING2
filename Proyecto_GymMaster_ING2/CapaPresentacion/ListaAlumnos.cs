@@ -35,7 +35,7 @@ namespace CapaPresentacion
             dgvdata.Rows.Clear(); // Limpia el DataGrid antes de actualizar
             foreach (Alumno item in listaAlumnos)
             {
-                if(usuarioActual.id_rol.id_rol == 3)
+                if(usuarioActual.id_rol.id_rol == 2)
                 {
                     labelTITULO.Text = "MIS ALUMNOS";
 
@@ -109,11 +109,11 @@ namespace CapaPresentacion
                 int idAlumno = Convert.ToInt32(dgvdata.Rows[e.RowIndex].Cells["idAlumno"].Value);
 
                 //Modal para ver ficha del alumno
-                /*using (var modal = new FichaAlumno(idAlumno, usuarioActual))
+                using (var modal = new FichaAlumno(idAlumno, usuarioActual))
                 {
                     modal.AlumnoActualizado += () => CargarAlumnos(); // evento para actualizar dataGrid
                     var resultado = modal.ShowDialog();
-                }*/
+                }
             }
         }
 

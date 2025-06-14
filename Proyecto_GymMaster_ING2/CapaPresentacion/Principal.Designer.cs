@@ -73,6 +73,7 @@ namespace CapaPresentacion
             // 
             this.menuUsuarios.AutoSize = false;
             this.menuUsuarios.BackColor = System.Drawing.Color.OrangeRed;
+            this.menuUsuarios.Enabled = false;
             this.menuUsuarios.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuUsuarios.IconChar = FontAwesome.Sharp.IconChar.UsersGear;
             this.menuUsuarios.IconColor = System.Drawing.Color.Black;

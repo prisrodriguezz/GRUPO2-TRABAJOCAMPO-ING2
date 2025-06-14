@@ -29,10 +29,10 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Membresia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Periodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRecargo = new System.Windows.Forms.TextBox();
             this.BCobrarInscripcion = new FontAwesome.Sharp.IconButton();
@@ -48,9 +48,6 @@ namespace CapaPresentacion
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.NombreAlumno = new System.Windows.Forms.Label();
-            this.Membresia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Periodo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Monto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -61,51 +58,48 @@ namespace CapaPresentacion
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Membresia,
             this.Periodo,
             this.Monto});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(5, 19);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 23);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(765, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(1020, 263);
             this.dataGridView1.TabIndex = 20;
+            // 
+            // Membresia
+            // 
+            this.Membresia.HeaderText = "Membresia";
+            this.Membresia.MinimumWidth = 6;
+            this.Membresia.Name = "Membresia";
+            // 
+            // Periodo
+            // 
+            this.Periodo.HeaderText = "Periodo";
+            this.Periodo.MinimumWidth = 6;
+            this.Periodo.Name = "Periodo";
+            // 
+            // Monto
+            // 
+            this.Monto.HeaderText = "Monto";
+            this.Monto.MinimumWidth = 6;
+            this.Monto.Name = "Monto";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(200, 31);
+            this.label1.Location = new System.Drawing.Point(267, 38);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 20);
+            this.label1.Size = new System.Drawing.Size(85, 25);
             this.label1.TabIndex = 34;
             this.label1.Text = "Recargo";
             // 
@@ -113,10 +107,11 @@ namespace CapaPresentacion
             // 
             this.textBoxRecargo.BackColor = System.Drawing.Color.Gainsboro;
             this.textBoxRecargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxRecargo.Location = new System.Drawing.Point(204, 54);
+            this.textBoxRecargo.Location = new System.Drawing.Point(272, 66);
+            this.textBoxRecargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxRecargo.Name = "textBoxRecargo";
             this.textBoxRecargo.ReadOnly = true;
-            this.textBoxRecargo.Size = new System.Drawing.Size(128, 24);
+            this.textBoxRecargo.Size = new System.Drawing.Size(169, 29);
             this.textBoxRecargo.TabIndex = 37;
             // 
             // BCobrarInscripcion
@@ -132,9 +127,10 @@ namespace CapaPresentacion
             this.BCobrarInscripcion.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BCobrarInscripcion.IconSize = 40;
             this.BCobrarInscripcion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BCobrarInscripcion.Location = new System.Drawing.Point(610, 31);
+            this.BCobrarInscripcion.Location = new System.Drawing.Point(813, 38);
+            this.BCobrarInscripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BCobrarInscripcion.Name = "BCobrarInscripcion";
-            this.BCobrarInscripcion.Size = new System.Drawing.Size(160, 45);
+            this.BCobrarInscripcion.Size = new System.Drawing.Size(213, 55);
             this.BCobrarInscripcion.TabIndex = 51;
             this.BCobrarInscripcion.Text = "COBRAR";
             this.BCobrarInscripcion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -151,9 +147,11 @@ namespace CapaPresentacion
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.BCobrarInscripcion);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(12, 324);
+            this.groupBox2.Location = new System.Drawing.Point(16, 399);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(776, 93);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(1035, 114);
             this.groupBox2.TabIndex = 61;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Pago";
@@ -163,9 +161,10 @@ namespace CapaPresentacion
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(7, 31);
+            this.label8.Location = new System.Drawing.Point(9, 38);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(136, 20);
+            this.label8.Size = new System.Drawing.Size(171, 25);
             this.label8.TabIndex = 53;
             this.label8.Text = "FORMA DE PAGO:";
             // 
@@ -174,9 +173,10 @@ namespace CapaPresentacion
             this.comboBoxFormaPago.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBoxFormaPago.FormattingEnabled = true;
-            this.comboBoxFormaPago.Location = new System.Drawing.Point(11, 54);
+            this.comboBoxFormaPago.Location = new System.Drawing.Point(15, 66);
+            this.comboBoxFormaPago.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBoxFormaPago.Name = "comboBoxFormaPago";
-            this.comboBoxFormaPago.Size = new System.Drawing.Size(180, 24);
+            this.comboBoxFormaPago.Size = new System.Drawing.Size(239, 28);
             this.comboBoxFormaPago.TabIndex = 52;
             this.comboBoxFormaPago.SelectedIndexChanged += new System.EventHandler(this.comboBoxFormaPago_SelectedIndexChanged);
             // 
@@ -185,10 +185,11 @@ namespace CapaPresentacion
             this.textBoxTotal.BackColor = System.Drawing.Color.White;
             this.textBoxTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxTotal.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxTotal.Location = new System.Drawing.Point(475, 52);
+            this.textBoxTotal.Location = new System.Drawing.Point(633, 64);
+            this.textBoxTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxTotal.Name = "textBoxTotal";
             this.textBoxTotal.ReadOnly = true;
-            this.textBoxTotal.Size = new System.Drawing.Size(129, 24);
+            this.textBoxTotal.Size = new System.Drawing.Size(171, 29);
             this.textBoxTotal.TabIndex = 48;
             this.textBoxTotal.Text = "0";
             // 
@@ -197,9 +198,10 @@ namespace CapaPresentacion
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(471, 29);
+            this.label5.Location = new System.Drawing.Point(628, 36);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 20);
+            this.label5.Size = new System.Drawing.Size(76, 25);
             this.label5.TabIndex = 48;
             this.label5.Text = "TOTAL:";
             // 
@@ -208,9 +210,10 @@ namespace CapaPresentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(544, 241);
+            this.label6.Location = new System.Drawing.Point(725, 297);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 20);
+            this.label6.Size = new System.Drawing.Size(113, 25);
             this.label6.TabIndex = 39;
             this.label6.Text = "SUBTOTAL:";
             // 
@@ -218,10 +221,11 @@ namespace CapaPresentacion
             // 
             this.textBoxSubTotal.BackColor = System.Drawing.Color.White;
             this.textBoxSubTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSubTotal.Location = new System.Drawing.Point(640, 239);
+            this.textBoxSubTotal.Location = new System.Drawing.Point(853, 294);
+            this.textBoxSubTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxSubTotal.Name = "textBoxSubTotal";
             this.textBoxSubTotal.ReadOnly = true;
-            this.textBoxSubTotal.Size = new System.Drawing.Size(130, 24);
+            this.textBoxSubTotal.Size = new System.Drawing.Size(172, 29);
             this.textBoxSubTotal.TabIndex = 40;
             // 
             // textBoxFecha
@@ -229,10 +233,11 @@ namespace CapaPresentacion
             this.textBoxFecha.BackColor = System.Drawing.Color.White;
             this.textBoxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxFecha.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.textBoxFecha.Location = new System.Drawing.Point(665, 14);
+            this.textBoxFecha.Location = new System.Drawing.Point(887, 17);
+            this.textBoxFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBoxFecha.Name = "textBoxFecha";
             this.textBoxFecha.ReadOnly = true;
-            this.textBoxFecha.Size = new System.Drawing.Size(123, 22);
+            this.textBoxFecha.Size = new System.Drawing.Size(163, 26);
             this.textBoxFecha.TabIndex = 63;
             // 
             // label9
@@ -240,9 +245,10 @@ namespace CapaPresentacion
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(614, 14);
+            this.label9.Location = new System.Drawing.Point(819, 17);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(53, 20);
+            this.label9.Size = new System.Drawing.Size(67, 25);
             this.label9.TabIndex = 39;
             this.label9.Text = "Fecha:";
             // 
@@ -252,9 +258,11 @@ namespace CapaPresentacion
             this.groupBox3.Controls.Add(this.textBoxSubTotal);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 44);
+            this.groupBox3.Location = new System.Drawing.Point(16, 54);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(776, 274);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(1035, 337);
             this.groupBox3.TabIndex = 64;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalles";
@@ -264,9 +272,10 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(13, 14);
+            this.label2.Location = new System.Drawing.Point(17, 17);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(88, 25);
             this.label2.TabIndex = 64;
             this.label2.Text = "Alumno:";
             // 
@@ -275,33 +284,19 @@ namespace CapaPresentacion
             this.NombreAlumno.AutoSize = true;
             this.NombreAlumno.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NombreAlumno.ForeColor = System.Drawing.Color.Black;
-            this.NombreAlumno.Location = new System.Drawing.Point(77, 14);
+            this.NombreAlumno.Location = new System.Drawing.Point(103, 17);
+            this.NombreAlumno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.NombreAlumno.Name = "NombreAlumno";
-            this.NombreAlumno.Size = new System.Drawing.Size(172, 20);
+            this.NombreAlumno.Size = new System.Drawing.Size(213, 24);
             this.NombreAlumno.TabIndex = 65;
             this.NombreAlumno.Text = "Nombre completo - DNI";
             // 
-            // Membresia
-            // 
-            this.Membresia.HeaderText = "Membresia";
-            this.Membresia.Name = "Membresia";
-            // 
-            // Periodo
-            // 
-            this.Periodo.HeaderText = "Periodo";
-            this.Periodo.Name = "Periodo";
-            // 
-            // Monto
-            // 
-            this.Monto.HeaderText = "Monto";
-            this.Monto.Name = "Monto";
-            // 
             // CobrarCuotaAlumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 426);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1067, 524);
             this.Controls.Add(this.NombreAlumno);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label2);
@@ -309,6 +304,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "CobrarCuotaAlumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "REALIZAR PAGO";

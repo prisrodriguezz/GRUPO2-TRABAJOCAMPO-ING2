@@ -83,6 +83,7 @@ namespace CapaPresentacion
         private void cargarDataGridInscripcion()
         {
             dataGridView1.Rows.Clear();
+            this.FormBorderStyle = FormBorderStyle.None;
 
             List<Membresia> listaMembresias = new CN_membresia().Listar();
 
