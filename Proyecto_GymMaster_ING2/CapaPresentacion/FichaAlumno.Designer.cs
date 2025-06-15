@@ -83,9 +83,11 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.labelNombreCompleto);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(16, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(576, 301);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(768, 370);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Informacion del alumno";
@@ -95,9 +97,10 @@ namespace CapaPresentacion
             this.labelObservacion.AutoSize = true;
             this.labelObservacion.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelObservacion.ForeColor = System.Drawing.Color.Black;
-            this.labelObservacion.Location = new System.Drawing.Point(6, 254);
+            this.labelObservacion.Location = new System.Drawing.Point(8, 313);
+            this.labelObservacion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelObservacion.Name = "labelObservacion";
-            this.labelObservacion.Size = new System.Drawing.Size(67, 20);
+            this.labelObservacion.Size = new System.Drawing.Size(83, 24);
             this.labelObservacion.TabIndex = 30;
             this.labelObservacion.Text = "Sin dato.";
             // 
@@ -106,9 +109,10 @@ namespace CapaPresentacion
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label16.Location = new System.Drawing.Point(6, 234);
+            this.label16.Location = new System.Drawing.Point(8, 288);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(114, 20);
+            this.label16.Size = new System.Drawing.Size(145, 25);
             this.label16.TabIndex = 29;
             this.label16.Text = "Observaciones:";
             // 
@@ -117,9 +121,10 @@ namespace CapaPresentacion
             this.labelContactoEmergencia.AutoSize = true;
             this.labelContactoEmergencia.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelContactoEmergencia.ForeColor = System.Drawing.Color.Black;
-            this.labelContactoEmergencia.Location = new System.Drawing.Point(375, 196);
+            this.labelContactoEmergencia.Location = new System.Drawing.Point(500, 241);
+            this.labelContactoEmergencia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelContactoEmergencia.Name = "labelContactoEmergencia";
-            this.labelContactoEmergencia.Size = new System.Drawing.Size(89, 20);
+            this.labelContactoEmergencia.Size = new System.Drawing.Size(110, 24);
             this.labelContactoEmergencia.TabIndex = 28;
             this.labelContactoEmergencia.Text = "3794998811";
             // 
@@ -128,9 +133,10 @@ namespace CapaPresentacion
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label14.Location = new System.Drawing.Point(216, 196);
+            this.label14.Location = new System.Drawing.Point(288, 241);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(161, 20);
+            this.label14.Size = new System.Drawing.Size(206, 25);
             this.label14.TabIndex = 27;
             this.label14.Text = "Contacto emergencia:";
             // 
@@ -139,9 +145,10 @@ namespace CapaPresentacion
             this.labelTelefono.AutoSize = true;
             this.labelTelefono.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTelefono.ForeColor = System.Drawing.Color.Black;
-            this.labelTelefono.Location = new System.Drawing.Point(288, 167);
+            this.labelTelefono.Location = new System.Drawing.Point(384, 206);
+            this.labelTelefono.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTelefono.Name = "labelTelefono";
-            this.labelTelefono.Size = new System.Drawing.Size(89, 20);
+            this.labelTelefono.Size = new System.Drawing.Size(110, 24);
             this.labelTelefono.TabIndex = 26;
             this.labelTelefono.Text = "3794998877";
             // 
@@ -150,9 +157,10 @@ namespace CapaPresentacion
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label12.Location = new System.Drawing.Point(216, 167);
+            this.label12.Location = new System.Drawing.Point(288, 206);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 20);
+            this.label12.Size = new System.Drawing.Size(96, 25);
             this.label12.TabIndex = 25;
             this.label12.Text = "Telefono:";
             // 
@@ -161,9 +169,10 @@ namespace CapaPresentacion
             this.labelSexo.AutoSize = true;
             this.labelSexo.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSexo.ForeColor = System.Drawing.Color.Black;
-            this.labelSexo.Location = new System.Drawing.Point(260, 137);
+            this.labelSexo.Location = new System.Drawing.Point(347, 169);
+            this.labelSexo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSexo.Name = "labelSexo";
-            this.labelSexo.Size = new System.Drawing.Size(76, 20);
+            this.labelSexo.Size = new System.Drawing.Size(97, 24);
             this.labelSexo.TabIndex = 24;
             this.labelSexo.Text = "Masculino";
             // 
@@ -172,9 +181,10 @@ namespace CapaPresentacion
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label10.Location = new System.Drawing.Point(216, 137);
+            this.label10.Location = new System.Drawing.Point(288, 169);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 20);
+            this.label10.Size = new System.Drawing.Size(61, 25);
             this.label10.TabIndex = 23;
             this.label10.Text = "Sexo:";
             // 
@@ -183,9 +193,10 @@ namespace CapaPresentacion
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEmail.ForeColor = System.Drawing.Color.Black;
-            this.labelEmail.Location = new System.Drawing.Point(271, 107);
+            this.labelEmail.Location = new System.Drawing.Point(361, 132);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(158, 20);
+            this.labelEmail.Size = new System.Drawing.Size(199, 24);
             this.labelEmail.TabIndex = 22;
             this.labelEmail.Text = "juanperez@gmail.com";
             // 
@@ -194,9 +205,10 @@ namespace CapaPresentacion
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label8.Location = new System.Drawing.Point(216, 107);
+            this.label8.Location = new System.Drawing.Point(288, 132);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(57, 20);
+            this.label8.Size = new System.Drawing.Size(72, 25);
             this.label8.TabIndex = 21;
             this.label8.Text = "E-mail:";
             // 
@@ -205,9 +217,10 @@ namespace CapaPresentacion
             this.labelFechaNacimiento.AutoSize = true;
             this.labelFechaNacimiento.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFechaNacimiento.ForeColor = System.Drawing.Color.Black;
-            this.labelFechaNacimiento.Location = new System.Drawing.Point(349, 77);
+            this.labelFechaNacimiento.Location = new System.Drawing.Point(465, 95);
+            this.labelFechaNacimiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFechaNacimiento.Name = "labelFechaNacimiento";
-            this.labelFechaNacimiento.Size = new System.Drawing.Size(85, 20);
+            this.labelFechaNacimiento.Size = new System.Drawing.Size(104, 24);
             this.labelFechaNacimiento.TabIndex = 20;
             this.labelFechaNacimiento.Text = "08/09/2024";
             // 
@@ -216,9 +229,10 @@ namespace CapaPresentacion
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label6.Location = new System.Drawing.Point(216, 77);
+            this.label6.Location = new System.Drawing.Point(288, 95);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 20);
+            this.label6.Size = new System.Drawing.Size(171, 25);
             this.label6.TabIndex = 19;
             this.label6.Text = "Fecha nacimiento:";
             // 
@@ -227,9 +241,10 @@ namespace CapaPresentacion
             this.labelDNI.AutoSize = true;
             this.labelDNI.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDNI.ForeColor = System.Drawing.Color.Black;
-            this.labelDNI.Location = new System.Drawing.Point(255, 48);
+            this.labelDNI.Location = new System.Drawing.Point(340, 59);
+            this.labelDNI.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDNI.Name = "labelDNI";
-            this.labelDNI.Size = new System.Drawing.Size(73, 20);
+            this.labelDNI.Size = new System.Drawing.Size(90, 24);
             this.labelDNI.TabIndex = 18;
             this.labelDNI.Text = "11111111";
             // 
@@ -238,9 +253,10 @@ namespace CapaPresentacion
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label4.Location = new System.Drawing.Point(216, 48);
+            this.label4.Location = new System.Drawing.Point(288, 59);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 20);
+            this.label4.Size = new System.Drawing.Size(52, 25);
             this.label4.TabIndex = 17;
             this.label4.Text = "DNI:";
             // 
@@ -249,9 +265,10 @@ namespace CapaPresentacion
             this.labelNombreCompleto.AutoSize = true;
             this.labelNombreCompleto.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombreCompleto.ForeColor = System.Drawing.Color.Black;
-            this.labelNombreCompleto.Location = new System.Drawing.Point(355, 19);
+            this.labelNombreCompleto.Location = new System.Drawing.Point(473, 23);
+            this.labelNombreCompleto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNombreCompleto.Name = "labelNombreCompleto";
-            this.labelNombreCompleto.Size = new System.Drawing.Size(78, 20);
+            this.labelNombreCompleto.Size = new System.Drawing.Size(101, 24);
             this.labelNombreCompleto.TabIndex = 16;
             this.labelNombreCompleto.Text = "Juan Perez";
             // 
@@ -260,9 +277,10 @@ namespace CapaPresentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label3.Location = new System.Drawing.Point(216, 19);
+            this.label3.Location = new System.Drawing.Point(288, 23);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 20);
+            this.label3.Size = new System.Drawing.Size(180, 25);
             this.label3.TabIndex = 15;
             this.label3.Text = "Nombre completo:";
             // 
@@ -270,9 +288,10 @@ namespace CapaPresentacion
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(8, 23);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(204, 203);
+            this.pictureBox1.Size = new System.Drawing.Size(271, 249);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -290,13 +309,15 @@ namespace CapaPresentacion
             this.BModificarAlumno.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BModificarAlumno.IconSize = 35;
             this.BModificarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BModificarAlumno.Location = new System.Drawing.Point(594, 18);
+            this.BModificarAlumno.Location = new System.Drawing.Point(792, 22);
+            this.BModificarAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BModificarAlumno.Name = "BModificarAlumno";
-            this.BModificarAlumno.Size = new System.Drawing.Size(184, 35);
+            this.BModificarAlumno.Size = new System.Drawing.Size(245, 43);
             this.BModificarAlumno.TabIndex = 27;
             this.BModificarAlumno.Text = "Modificar datos";
             this.BModificarAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BModificarAlumno.UseVisualStyleBackColor = false;
+            this.BModificarAlumno.Visible = false;
             this.BModificarAlumno.Click += new System.EventHandler(this.BModificarAlumno_Click);
             // 
             // BListaDePagos
@@ -312,9 +333,10 @@ namespace CapaPresentacion
             this.BListaDePagos.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BListaDePagos.IconSize = 30;
             this.BListaDePagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BListaDePagos.Location = new System.Drawing.Point(594, 61);
+            this.BListaDePagos.Location = new System.Drawing.Point(792, 75);
+            this.BListaDePagos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BListaDePagos.Name = "BListaDePagos";
-            this.BListaDePagos.Size = new System.Drawing.Size(184, 35);
+            this.BListaDePagos.Size = new System.Drawing.Size(245, 43);
             this.BListaDePagos.TabIndex = 29;
             this.BListaDePagos.Text = "Lista de pagos";
             this.BListaDePagos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -334,9 +356,10 @@ namespace CapaPresentacion
             this.BCobrarCuota.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BCobrarCuota.IconSize = 30;
             this.BCobrarCuota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BCobrarCuota.Location = new System.Drawing.Point(594, 105);
+            this.BCobrarCuota.Location = new System.Drawing.Point(792, 129);
+            this.BCobrarCuota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BCobrarCuota.Name = "BCobrarCuota";
-            this.BCobrarCuota.Size = new System.Drawing.Size(184, 35);
+            this.BCobrarCuota.Size = new System.Drawing.Size(245, 43);
             this.BCobrarCuota.TabIndex = 30;
             this.BCobrarCuota.Text = "Cobrar cuota";
             this.BCobrarCuota.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -356,9 +379,10 @@ namespace CapaPresentacion
             this.BbajaAlumno.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BbajaAlumno.IconSize = 30;
             this.BbajaAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BbajaAlumno.Location = new System.Drawing.Point(594, 400);
+            this.BbajaAlumno.Location = new System.Drawing.Point(792, 492);
+            this.BbajaAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BbajaAlumno.Name = "BbajaAlumno";
-            this.BbajaAlumno.Size = new System.Drawing.Size(184, 35);
+            this.BbajaAlumno.Size = new System.Drawing.Size(245, 43);
             this.BbajaAlumno.TabIndex = 31;
             this.BbajaAlumno.Text = "Dar de baja";
             this.BbajaAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -374,9 +398,11 @@ namespace CapaPresentacion
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(12, 319);
+            this.groupBox2.Location = new System.Drawing.Point(16, 393);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(576, 116);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(768, 143);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
             // 
@@ -385,9 +411,10 @@ namespace CapaPresentacion
             this.labelPlanEntrenamiento.AutoSize = true;
             this.labelPlanEntrenamiento.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPlanEntrenamiento.ForeColor = System.Drawing.Color.Black;
-            this.labelPlanEntrenamiento.Location = new System.Drawing.Point(184, 83);
+            this.labelPlanEntrenamiento.Location = new System.Drawing.Point(245, 102);
+            this.labelPlanEntrenamiento.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelPlanEntrenamiento.Name = "labelPlanEntrenamiento";
-            this.labelPlanEntrenamiento.Size = new System.Drawing.Size(67, 20);
+            this.labelPlanEntrenamiento.Size = new System.Drawing.Size(83, 24);
             this.labelPlanEntrenamiento.TabIndex = 35;
             this.labelPlanEntrenamiento.Text = "Sin dato.";
             // 
@@ -396,9 +423,10 @@ namespace CapaPresentacion
             this.labelCoachAcargo.AutoSize = true;
             this.labelCoachAcargo.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCoachAcargo.ForeColor = System.Drawing.Color.Black;
-            this.labelCoachAcargo.Location = new System.Drawing.Point(122, 50);
+            this.labelCoachAcargo.Location = new System.Drawing.Point(163, 62);
+            this.labelCoachAcargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCoachAcargo.Name = "labelCoachAcargo";
-            this.labelCoachAcargo.Size = new System.Drawing.Size(67, 20);
+            this.labelCoachAcargo.Size = new System.Drawing.Size(83, 24);
             this.labelCoachAcargo.TabIndex = 34;
             this.labelCoachAcargo.Text = "Sin dato.";
             // 
@@ -407,9 +435,10 @@ namespace CapaPresentacion
             this.labelTipoMembresia.AutoSize = true;
             this.labelTipoMembresia.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTipoMembresia.ForeColor = System.Drawing.Color.Black;
-            this.labelTipoMembresia.Location = new System.Drawing.Point(103, 16);
+            this.labelTipoMembresia.Location = new System.Drawing.Point(137, 20);
+            this.labelTipoMembresia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTipoMembresia.Name = "labelTipoMembresia";
-            this.labelTipoMembresia.Size = new System.Drawing.Size(67, 20);
+            this.labelTipoMembresia.Size = new System.Drawing.Size(83, 24);
             this.labelTipoMembresia.TabIndex = 33;
             this.labelTipoMembresia.Text = "Sin dato.";
             // 
@@ -418,9 +447,10 @@ namespace CapaPresentacion
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label5.Location = new System.Drawing.Point(6, 83);
+            this.label5.Location = new System.Drawing.Point(8, 102);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 20);
+            this.label5.Size = new System.Drawing.Size(220, 25);
             this.label5.TabIndex = 32;
             this.label5.Text = "Plan de entrenamiento:";
             // 
@@ -429,9 +459,10 @@ namespace CapaPresentacion
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label2.Location = new System.Drawing.Point(6, 50);
+            this.label2.Location = new System.Drawing.Point(8, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 20);
+            this.label2.Size = new System.Drawing.Size(142, 25);
             this.label2.TabIndex = 31;
             this.label2.Text = "Coach a cargo:";
             // 
@@ -440,9 +471,10 @@ namespace CapaPresentacion
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label1.Location = new System.Drawing.Point(6, 16);
+            this.label1.Location = new System.Drawing.Point(8, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 20);
+            this.label1.Size = new System.Drawing.Size(115, 25);
             this.label1.TabIndex = 30;
             this.label1.Text = "Membresia:";
             // 
@@ -459,9 +491,10 @@ namespace CapaPresentacion
             this.BRestaurarAlumno.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BRestaurarAlumno.IconSize = 30;
             this.BRestaurarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BRestaurarAlumno.Location = new System.Drawing.Point(594, 400);
+            this.BRestaurarAlumno.Location = new System.Drawing.Point(792, 492);
+            this.BRestaurarAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BRestaurarAlumno.Name = "BRestaurarAlumno";
-            this.BRestaurarAlumno.Size = new System.Drawing.Size(184, 35);
+            this.BRestaurarAlumno.Size = new System.Drawing.Size(245, 43);
             this.BRestaurarAlumno.TabIndex = 35;
             this.BRestaurarAlumno.Text = "Dar de alta";
             this.BRestaurarAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -471,9 +504,9 @@ namespace CapaPresentacion
             // 
             // FichaAlumno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 445);
+            this.ClientSize = new System.Drawing.Size(1053, 548);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.BbajaAlumno);
             this.Controls.Add(this.BCobrarCuota);
@@ -482,6 +515,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BRestaurarAlumno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FichaAlumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FICHA DEL ALUMNO";

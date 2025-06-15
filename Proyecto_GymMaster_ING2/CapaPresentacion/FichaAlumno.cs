@@ -114,7 +114,7 @@ namespace CapaPresentacion
                     }
                     else
                     {
-                        MessageBox.Show("No se encontró la imagen del alumno.", "Error de imagen", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //MessageBox.Show("No se encontró la imagen del alumno.", "Error de imagen", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         //pictureBox1.Image = Properties.Resources.siluetaPerfilPersona;
                     }
 
