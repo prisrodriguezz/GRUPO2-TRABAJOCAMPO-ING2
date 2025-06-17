@@ -1,4 +1,4 @@
-use Proyecto_GymMaster
+use Proyecto_GymMaster;
 GO
 
 INSERT INTO Rol (descripcion)
@@ -12,23 +12,23 @@ VALUES (1, 'menuUsuarios'),
        (1, 'menuAlumnos'),
        (1, 'menuPagos'),
 	   (1, 'menuPlanes');
-
+GO
 INSERT INTO Permiso(id_rol, nombreMenu)
 VALUES (2, 'menuAlumnos'),
        (2, 'menuPlanes');
 GO
 
 /*Usuarios principales*/
-INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contrase�a, apellido)
+INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contrasena, apellido)
 VALUES (1, 'Gimnasio', 'gymmaster@gmail.com', '3794556789', '12345678', '2010-05-20', 1, 'administrador', 'Gymmaster');
 GO
 
-INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contrase�a, apellido)
+INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contrasena, apellido)
 VALUES (2, 'Pablo', 'pablogomez@gmail.com', '3794114567', '55555555', '2005-03-30', 1, 'profesor', 'Gomez');
 GO
 
 /*Insertar 10 usuarios rol coach*/
-INSERT INTO Usuario (id_rol, nombre, apellido, email, telefono, dni, fecha_nacimiento, estado, contrase�a) VALUES
+INSERT INTO Usuario (id_rol, nombre, apellido, email, telefono, dni, fecha_nacimiento, estado, contrasena) VALUES
 (2, 'Sof�a', 'Mart�nez', 'sofia.martinez@gmail.com', '1134567890', '40123456', '1995-06-15', 1, 'password1'),
 (2, 'Lucas', 'G�mez', 'lucas.gomez@hotmail.com', '1122334455', '40234567', '1992-09-20', 1, 'password2'),
 (2, 'Camila', 'Fern�ndez', 'camila.fernandez@yahoo.com', '1167894321', '40345678', '1997-02-11', 1, 'password3'),

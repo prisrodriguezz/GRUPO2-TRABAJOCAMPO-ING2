@@ -24,7 +24,7 @@ CREATE TABLE Usuario (
     dni NVARCHAR(20),
     fecha_nacimiento DATE,
     estado BIT NOT NULL,
-    contraseña NVARCHAR(255)
+    contrasena NVARCHAR(255)
 );
 GO
 
