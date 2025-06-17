@@ -9,7 +9,6 @@ BEGIN
 END;
 GO
 
-GO
 CREATE PROCEDURE SP_LISTAR_PLAN_ENTRENAMIENTO
 AS
 BEGIN
@@ -18,7 +17,6 @@ END
 GO
 
 /*PROCEDIMIENTOS PARA AGREGAR UN PLAN DE ENTRENAMIENTO*/
-GO
 CREATE PROCEDURE SP_AGREGAR_PLAN_ENTRENAMIENTO
     @nombre NVARCHAR(100),
     @fechaInicio DATE,
@@ -53,7 +51,6 @@ END;
 GO
 
 /*PROCEDIMIENTOS PARA EDITAR UN PLAN DE ENTRENAMIENTO*/
-GO
 CREATE PROCEDURE SP_EDITAR_PLAN_ENTRENAMIENTO
     @id_plan INT,
     @nombre NVARCHAR(100),
@@ -94,7 +91,6 @@ END;
 GO
 
 /*PROCEDIMIENTOS PARA ELIMINAR UN PLAN DE ENTRENAMIENTO*/
-GO
 CREATE PROCEDURE SP_ELIMINAR_PLAN_ENTRENAMIENTO
     @id_plan INT,
     @respuesta INT OUTPUT,
@@ -118,7 +114,7 @@ BEGIN
             RETURN;
         END
 
-        -- Cambiar el estado del plan de entrenamiento a 0 (eliminación lógica)
+        -- Cambiar el estado del plan de entrenamiento a 0 (eliminaciï¿½n lï¿½gica)
         UPDATE PlanEntrenamiento
         SET estado = 0
         WHERE id_plan = @id_plan;
@@ -134,7 +130,6 @@ END;
 GO
 
 /*PROCEDIMIENTOS PARA RESTAURAR UN PLAN DE ENTRENAMIENTO*/
-GO
 CREATE PROCEDURE SP_RESTAURAR_PLAN_ENTRENAMIENTO
     @id_plan INT,
     @respuesta INT OUTPUT,
@@ -142,11 +137,11 @@ CREATE PROCEDURE SP_RESTAURAR_PLAN_ENTRENAMIENTO
 AS
 BEGIN
     BEGIN TRY
-        -- Verificar si existe el plan de entrenamiento y ha sido eliminado lógicamente
+        -- Verificar si existe el plan de entrenamiento y ha sido eliminado lï¿½gicamente
         IF NOT EXISTS (SELECT 1 FROM PlanEntrenamiento WHERE id_plan = @id_plan AND estado = 0)
         BEGIN
             SET @respuesta = 0;
-            SET @mensaje = 'El plan de entrenamiento no existe o ya está activo.';
+            SET @mensaje = 'El plan de entrenamiento no existe o ya estï¿½ activo.';
             RETURN;
         END
 
@@ -166,7 +161,6 @@ END;
 GO
 
 /*PROCEDIMIENTOS PARA OBTENER UN PLAN DE ENTRENAMIENTO*/
-GO
 CREATE PROCEDURE SP_OBTENER_PLAN_ENTRENAMIENTO_PORID(
    @id_plan INT
 )
@@ -189,14 +183,13 @@ END
 GO
 
 /*PROCEDIMIENTOS ALMACENADOS PARA LAS TABLA 'PLAN_EJERCICIO', 'USUARIO_PLAN'*/
-GO
 CREATE PROCEDURE SP_ASOCIAR_PLAN_EJERCICIO
     @id_plan INT,
     @id_ejercicio INT
 AS
 BEGIN
     BEGIN TRY
-        -- Insertar la relación entre el plan y el ejercicio
+        -- Insertar la relaciï¿½n entre el plan y el ejercicio
         INSERT INTO Plan_Ejercicio (id_plan, id_ejercicio)
         VALUES (@id_plan, @id_ejercicio);
     END TRY
@@ -223,7 +216,7 @@ CREATE PROCEDURE SP_ASOCIAR_USUARIO_PLAN
 AS
 BEGIN
     BEGIN TRY
-        -- Insertar la relación entre el usuario y el plan
+        -- Insertar la relaciï¿½n entre el usuario y el plan
         INSERT INTO Usuario_Plan (id_usuario, id_plan)
         VALUES (@id_usuario, @id_plan);
     END TRY
@@ -345,7 +338,7 @@ as
 
 begin
 
-     -- Eliminación lógica, se actualiza el campo 'estado' a 0 (inactivo)
+     -- Eliminaciï¿½n lï¿½gica, se actualiza el campo 'estado' a 0 (inactivo)
       UPDATE Alumno SET estado = 0 WHERE id_alumno = @id_alumno
 
       SET @respuesta = 1
@@ -368,7 +361,7 @@ as
 
 begin
 
-     -- Restauracion lógica, se actualiza el campo 'estado' a 1 (activo)
+     -- Restauracion lï¿½gica, se actualiza el campo 'estado' a 1 (activo)
       UPDATE Alumno SET estado = 1 WHERE id_alumno = @id_alumno
 
       SET @respuesta = 1
@@ -445,7 +438,7 @@ BEGIN
     DECLARE @duracionMembresia INT;
     DECLARE @fechaCubierta DATE;
     
-    -- Obtener la última fecha de pago y la duración de la membresía del alumno
+    -- Obtener la ï¿½ltima fecha de pago y la duraciï¿½n de la membresï¿½a del alumno
     SELECT @ultimaFechaPago = MAX(p.fecha),
            @duracionMembresia = m.duracion
     FROM Pago p
@@ -454,7 +447,7 @@ BEGIN
     WHERE a.id_alumno = @id_alumno
     GROUP BY m.duracion;
     
-    -- Calcular la fecha hasta dónde alcanza la membresía
+    -- Calcular la fecha hasta dï¿½nde alcanza la membresï¿½a
     SET @fechaCubierta = DATEADD(DAY, @duracionMembresia, @ultimaFechaPago);
     
     -- Verificar si la fecha cubierta es mayor o igual a la fecha actual
@@ -531,7 +524,7 @@ AS
 BEGIN
    SET NOCOUNT ON;
 
-    -- CTE para obtener la última fecha de pago del alumno y la duración de su membresía
+    -- CTE para obtener la ï¿½ltima fecha de pago del alumno y la duraciï¿½n de su membresï¿½a
     ;WITH UltimaFecha AS (
         SELECT 
             a.id_alumno,
@@ -549,7 +542,7 @@ BEGIN
             a.id_alumno, m.duracion
     ),
     FechasAdeudadas AS (
-        -- Generar fechas de pago a partir de la última fecha de pago
+        -- Generar fechas de pago a partir de la ï¿½ltima fecha de pago
         SELECT 
             u.id_alumno,
             DATEADD(DAY, (ROW_NUMBER() OVER (ORDER BY (SELECT NULL))) * u.duracion, u.ultimaFechaPago) AS fecha_adeudada
@@ -578,7 +571,7 @@ BEGIN
 	JOIN 
 		Membresia m ON m.id_membresia = a.id_membresia
     WHERE 
-        -- Solo fechas vencidas o la del próximo pago dentro del mes actual
+        -- Solo fechas vencidas o la del prï¿½ximo pago dentro del mes actual
         f.fecha_adeudada <= GETDATE() -- Filtra solo las fechas de pago vencidas
         OR (MONTH(f.fecha_adeudada) = MONTH(GETDATE()) AND YEAR(f.fecha_adeudada) = YEAR(GETDATE())) -- Y la fecha correspondiente al mes actual
     ORDER BY 
