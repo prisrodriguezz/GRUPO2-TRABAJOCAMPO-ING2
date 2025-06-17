@@ -109,13 +109,13 @@ namespace CapaPresentacion
             comboBoxCoachs.Items.Clear();
 
             // Obtener la lista de usuarios
-            List<Usuario> listausuario = new CN_usuario().Listar();
+            List<Usuario> listausuario = new CN_usuario().ListarCoachs();
 
             // Añadir los coachs al ComboBox
             foreach (Usuario item in listausuario)
             {
-                // Verifica si el usuario es un coach y esta activo
-                if (item.id_rol.id_rol == 3 && item.estado == true)
+                // Verifica si un coach esta activo
+                if (item.estado == true)
                 {
                     // Agregar el coach como un nuevo item en el ComboBox
                     comboBoxCoachs.Items.Add(new { Text = $"{item.nombre} {item.apellido}", Value = item.id_usuario });
