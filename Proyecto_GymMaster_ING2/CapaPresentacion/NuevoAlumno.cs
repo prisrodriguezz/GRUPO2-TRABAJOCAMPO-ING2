@@ -115,7 +115,7 @@ namespace CapaPresentacion
             foreach (Usuario item in listausuario)
             {
                 // Verifica si el usuario es un coach y esta activo
-                if (item.id_rol.id_rol == 3 && item.estado == true)
+                if (item.id_rol.id_rol == 2 && item.estado == true)
                 {
                     // Agregar el coach como un nuevo item en el ComboBox
                     comboBoxCoachs.Items.Add(new { Text = $"{item.nombre} {item.apellido}", Value = item.id_usuario });

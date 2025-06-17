@@ -19,26 +19,26 @@ VALUES (2, 'menuAlumnos'),
 GO
 
 /*Usuarios principales*/
-INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contraseña, apellido)
+INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contraseï¿½a, apellido)
 VALUES (1, 'Gimnasio', 'gymmaster@gmail.com', '3794556789', '12345678', '2010-05-20', 1, 'administrador', 'Gymmaster');
 GO
 
-INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contraseña, apellido)
+INSERT INTO Usuario (id_rol, nombre, email, telefono, dni, fecha_nacimiento, estado, contraseï¿½a, apellido)
 VALUES (2, 'Pablo', 'pablogomez@gmail.com', '3794114567', '55555555', '2005-03-30', 1, 'profesor', 'Gomez');
 GO
 
 /*Insertar 10 usuarios rol coach*/
-INSERT INTO Usuario (id_rol, nombre, apellido, email, telefono, dni, fecha_nacimiento, estado, contraseña) VALUES
-(2, 'Sofía', 'Martínez', 'sofia.martinez@gmail.com', '1134567890', '40123456', '1995-06-15', 1, 'password1'),
-(2, 'Lucas', 'Gómez', 'lucas.gomez@hotmail.com', '1122334455', '40234567', '1992-09-20', 1, 'password2'),
-(2, 'Camila', 'Fernández', 'camila.fernandez@yahoo.com', '1167894321', '40345678', '1997-02-11', 1, 'password3'),
-(2, 'Mateo', 'López', 'mateo.lopez@gmail.com', '1156789123', '40456789', '1990-12-05', 1, 'password4'),
-(2, 'Valentina', 'Díaz', 'valentina.diaz@gmail.com', '1145678932', '40567890', '1993-07-18', 1, 'password5'),
-(2, 'Tomás', 'Pérez', 'tomas.perez@hotmail.com', '1178912345', '40678901', '1989-03-29', 1, 'password6'),
-(2, 'Martina', 'Sánchez', 'martina.sanchez@gmail.com', '1134561234', '40789012', '1996-11-09', 1, 'password7'),
+INSERT INTO Usuario (id_rol, nombre, apellido, email, telefono, dni, fecha_nacimiento, estado, contraseï¿½a) VALUES
+(2, 'Sofï¿½a', 'Martï¿½nez', 'sofia.martinez@gmail.com', '1134567890', '40123456', '1995-06-15', 1, 'password1'),
+(2, 'Lucas', 'Gï¿½mez', 'lucas.gomez@hotmail.com', '1122334455', '40234567', '1992-09-20', 1, 'password2'),
+(2, 'Camila', 'Fernï¿½ndez', 'camila.fernandez@yahoo.com', '1167894321', '40345678', '1997-02-11', 1, 'password3'),
+(2, 'Mateo', 'Lï¿½pez', 'mateo.lopez@gmail.com', '1156789123', '40456789', '1990-12-05', 1, 'password4'),
+(2, 'Valentina', 'Dï¿½az', 'valentina.diaz@gmail.com', '1145678932', '40567890', '1993-07-18', 1, 'password5'),
+(2, 'Tomï¿½s', 'Pï¿½rez', 'tomas.perez@hotmail.com', '1178912345', '40678901', '1989-03-29', 1, 'password6'),
+(2, 'Martina', 'Sï¿½nchez', 'martina.sanchez@gmail.com', '1134561234', '40789012', '1996-11-09', 1, 'password7'),
 (2, 'Santiago', 'Romero', 'santiago.romero@yahoo.com', '1123456789', '40890123', '1991-05-22', 1, 'password8'),
 (2, 'Florencia', 'Torres', 'florencia.torres@gmail.com', '1161234567', '40901234', '1994-08-03', 1, 'password9'),
-(2, 'Benjamin', 'Ramírez', 'benjamin.ramirez@hotmail.com', '1176543210', '41012345', '1988-01-17', 1, 'password10');
+(2, 'Benjamin', 'Ramï¿½rez', 'benjamin.ramirez@hotmail.com', '1176543210', '41012345', '1988-01-17', 1, 'password10');
 GO
 
 /*Insertar 10 ejercicios*/
@@ -59,17 +59,17 @@ Go
 INSERT INTO MedioDePago (nombre, comision, fechaCreacion, estado)
 VALUES 
 ('Efectivo', 0.00, '2023-01-01', 1),
-('Tarjeta de Crédito', 10.00, '2023-01-01', 1),
+('Tarjeta de Crï¿½dito', 10.00, '2023-01-01', 1),
 ('Transferencia Bancaria', 2.50, '2023-01-01', 1),
 ('Mercado Pago', 5.00, '2023-01-01', 1);
 GO
 
--- Insertar membresías (necesarias para asociar a alumnos)
+-- Insertar membresï¿½as (necesarias para asociar a alumnos)
 INSERT INTO Membresia (nombre, duracion, fecha_creacion, costo, estado)
 VALUES 
-('Membresía Básica', 30, '2023-01-01', 5000.00, 1),
-('Membresía Premium', 30, '2023-01-01', 8000.00, 1),
-('Membresía Anual', 365, '2023-01-01', 50000.00, 1);
+('Membresï¿½a Bï¿½sica', 30, '2023-01-01', 5000.00, 1),
+('Membresï¿½a Premium', 30, '2023-01-01', 8000.00, 1),
+('Membresï¿½a Anual', 365, '2023-01-01', 50000.00, 1);
 GO
 
 -- Insertar planes de entrenamiento (necesarios para alumnos)
@@ -80,16 +80,26 @@ VALUES
 ('Plan Avanzado', '2023-01-01', '2023-12-31', 5, 1);
 GO
 
--- Insertar algunos alumnos (asociados a usuarios, membresías y planes)
+-- Asignar a un Coach a dos planes diferentes
+EXEC SP_ASOCIAR_USUARIO_PLAN @id_usuario = 2, @id_plan = 1; -- Plan Inicial
+EXEC SP_ASOCIAR_USUARIO_PLAN @id_usuario = 2, @id_plan = 2; -- Plan Intermedio
+
+-- Asignar a otros coaches
+EXEC SP_ASOCIAR_USUARIO_PLAN @id_usuario = 3, @id_plan = 1; -- SofÃ­a MartÃ­nez al Plan Inicial
+EXEC SP_ASOCIAR_USUARIO_PLAN @id_usuario = 4, @id_plan = 3; -- Lucas GÃ³mez al Plan Avanzado
+EXEC SP_ASOCIAR_USUARIO_PLAN @id_usuario = 5, @id_plan = 3; -- Camila Fernandez al Plan Avanzado
+EXEC SP_ASOCIAR_USUARIO_PLAN @id_usuario = 6, @id_plan = 2; -- Mateo Lopez al Plan Avanzado
+
+-- Insertar algunos alumnos (asociados a usuarios, membresï¿½as y planes)
 INSERT INTO Alumno (id_usuario, id_membresia, id_plan, nombre, apellido, email, telefono, dni, fecha_nacimiento, contacto_emergencia, sexo, observaciones, estado)
 VALUES 
-(1, 1, 1, 'Juan', 'Pérez', 'juan.perez@gmail.com', '3794123456', '12345678', '1990-05-15', 'María Pérez - 3794123457', 'Masculino', 'Ninguna', 1),
-(1, 2, 2, 'Ana', 'Gómez', 'ana.gomez@gmail.com', '3794234567', '23456789', '1992-08-20', 'Carlos Gómez - 3794234568', 'Femenino', 'Alergia a nueces', 1),
-(1, 3, 3, 'Carlos', 'López', 'carlos.lopez@gmail.com', '3794345678', '34567890', '1988-03-10', 'Laura López - 3794345679', 'Masculino', 'Lesión de rodilla previa', 1);
+(2, 1, 1, 'Juan', 'Pï¿½rez', 'juan.perez@gmail.com', '3794123456', '12345678', '1990-05-15', 'Marï¿½a Pï¿½rez - 3794123457', 'Masculino', 'Ninguna', 1),
+(2, 2, 2, 'Ana', 'Gï¿½mez', 'ana.gomez@gmail.com', '3794234567', '23456789', '1992-08-20', 'Carlos Gï¿½mez - 3794234568', 'Femenino', 'Alergia a nueces', 1),
+(3, 3, 3, 'Carlos', 'Lï¿½pez', 'carlos.lopez@gmail.com', '3794345678', '34567890', '1988-03-10', 'Laura Lï¿½pez - 3794345679', 'Masculino', 'Lesiï¿½n de rodilla previa', 1);
 GO
 
 -- Insertar pagos
--- Pago 1: Juan Pérez paga su membresía básica
+-- Pago 1: Juan Pï¿½rez paga su membresï¿½a bï¿½sica
 DECLARE @id_pago1 INT;
 EXEC SP_REGISTRAR_PAGO 
     @id_usuario = 1, 
@@ -108,7 +118,7 @@ EXEC SP_REGISTRAR_PAGO_DETALLE
     @monto = 5000.00;
 GO
 
--- Pago 2: Ana Gómez paga su membresía premium con tarjeta (incluye comisión)
+-- Pago 2: Ana Gï¿½mez paga su membresï¿½a premium con tarjeta (incluye comisiï¿½n)
 DECLARE @id_pago2 INT;
 EXEC SP_REGISTRAR_PAGO 
     @id_usuario = 1, 
@@ -116,7 +126,7 @@ EXEC SP_REGISTRAR_PAGO
     @id_medioPago = 2, 
     @fecha = '2025-04-05', 
     @cantidad = 1, 
-    @total = 8800.00, -- 8000 + 10% comisión
+    @total = 8800.00, -- 8000 + 10% comisiï¿½n
 	@recargo = 800.00,
     @id_pago = @id_pago2 OUTPUT;
 
@@ -127,7 +137,7 @@ EXEC SP_REGISTRAR_PAGO_DETALLE
     @monto = 8000.00;
 GO
 
--- Pago 3: Carlos López paga su membresía anual con transferencia
+-- Pago 3: Carlos Lï¿½pez paga su membresï¿½a anual con transferencia
 DECLARE @id_pago3 INT;
 EXEC SP_REGISTRAR_PAGO 
     @id_usuario = 1, 
@@ -135,7 +145,7 @@ EXEC SP_REGISTRAR_PAGO
     @id_medioPago = 3, 
     @fecha = '2024-04-10', 
     @cantidad = 1, 
-    @total = 51250.00, -- 50000 + 2.5% comisión
+    @total = 51250.00, -- 50000 + 2.5% comisiï¿½n
 	@recargo = 1250.00,
     @id_pago = @id_pago3 OUTPUT;
 
@@ -146,13 +156,13 @@ EXEC SP_REGISTRAR_PAGO_DETALLE
     @monto = 50000.00;
 GO
 
--- Pago 4: Juan Pérez paga su segunda cuota con recargo por demora
+-- Pago 4: Juan Pï¿½rez paga su segunda cuota con recargo por demora
 DECLARE @id_pago4 INT;
 EXEC SP_REGISTRAR_PAGO 
     @id_usuario = 1, 
     @id_alumno = 1, 
     @id_medioPago = 1, 
-    @fecha = '2024-11-15', -- Pagó 15 días después del vencimiento
+    @fecha = '2024-11-15', -- Pagï¿½ 15 dï¿½as despuï¿½s del vencimiento
     @cantidad = 1, 
     @total = 5500.00, -- 5000 + 10% recargo
 	@recargo = 500.00,
@@ -165,7 +175,7 @@ EXEC SP_REGISTRAR_PAGO_DETALLE
     @monto = 5000.00;
 GO
 
--- Pago 5: Ana Gómez paga su segunda cuota a tiempo
+-- Pago 5: Ana Gï¿½mez paga su segunda cuota a tiempo
 DECLARE @id_pago5 INT;
 EXEC SP_REGISTRAR_PAGO 
     @id_usuario = 1, 
@@ -173,7 +183,7 @@ EXEC SP_REGISTRAR_PAGO
     @id_medioPago = 4, 
     @fecha = '2025-05-05', 
     @cantidad = 1, 
-    @total = 8400.00, -- 8000 + 5% comisión (Mercado Pago)
+    @total = 8400.00, -- 8000 + 5% comisiï¿½n (Mercado Pago)
 	@recargo = 400.00,
     @id_pago = @id_pago5 OUTPUT;
 
