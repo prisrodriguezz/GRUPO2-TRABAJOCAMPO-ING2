@@ -15,7 +15,7 @@ namespace CapaDatos
                 try
                 {
 
-                    string query = "SELECT u.id_usuario, u.id_rol, r.descripcion AS rol_descripcion, u.nombre, u.email, u.telefono, u.dni, u.fecha_nacimiento, u.estado, u.contraseña, u.apellido " +
+                    string query = "SELECT u.id_usuario, u.id_rol, r.descripcion AS rol_descripcion, u.nombre, u.email, u.telefono, u.dni, u.fecha_nacimiento, u.estado, u.contrasena, u.apellido " +
                                "FROM Usuario u " +
                                "JOIN Rol r ON u.id_rol = r.id_rol";
                     SqlCommand cmd = new SqlCommand(query, conexion);
@@ -38,7 +38,7 @@ namespace CapaDatos
                                 dni = dr["dni"].ToString(),
                                 fecha_nacimiento = dr["fecha_nacimiento"].ToString(),
                                 estado = Convert.ToBoolean(dr["estado"]),
-                                contraseña = dr["contraseña"].ToString(),
+                                contraseña = dr["contrasena"].ToString(),
                                 apellido = dr["apellido"].ToString()
 
 
@@ -63,7 +63,7 @@ namespace CapaDatos
                 try
                 {
 
-                    string query = "SELECT u.id_usuario, u.id_rol, r.descripcion AS rol_descripcion, u.nombre, u.email, u.telefono, u.dni, u.fecha_nacimiento, u.estado, u.contraseña, u.apellido " +
+                    string query = "SELECT u.id_usuario, u.id_rol, r.descripcion AS rol_descripcion, u.nombre, u.email, u.telefono, u.dni, u.fecha_nacimiento, u.estado, u.contrasena, u.apellido " +
                                "FROM Usuario u" +
                                "JOIN Rol r ON u.id_rol = r.id_rol " +
                                "WHERE u.id_rol = 3";
@@ -90,7 +90,7 @@ namespace CapaDatos
                                 dni = dr["dni"].ToString(),
                                 fecha_nacimiento = dr["fecha_nacimiento"].ToString(),
                                 estado = Convert.ToBoolean(dr["estado"]),
-                                contraseña = dr["contraseña"].ToString(),
+                                contraseña = dr["contrasena"].ToString(),
                                 apellido = dr["apellido"].ToString()
 
 
