@@ -1,4 +1,10 @@
-Usuario para la primera entrega: coach
-dni: 40123456
-contraseña: password1
-Entre otros más en la inserción de usuarios.
+INICIO DE SESIÓN:
+
+USUARIO COACH
+DNI: 40123456
+CONTRASEÑA: password1
+
+USUARIO ADMIN
+DNI: 12345678
+CONTRASEÑA: administrador
+
