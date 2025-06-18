@@ -64,7 +64,7 @@ namespace CapaDatos
                 {
 
                     string query = "SELECT u.id_usuario, u.id_rol, r.descripcion AS rol_descripcion, u.nombre, u.email, u.telefono, u.dni, u.fecha_nacimiento, u.estado, u.contrasena, u.apellido " +
-                               "FROM Usuario u" +
+                               "FROM Usuario u " +
                                "JOIN Rol r ON u.id_rol = r.id_rol " +
                                "WHERE u.id_rol = 2";
                     SqlCommand cmd = new SqlCommand(query, conexion);
