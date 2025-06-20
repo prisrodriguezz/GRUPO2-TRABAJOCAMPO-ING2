@@ -29,11 +29,11 @@ namespace CapaPresentacion
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.nroFactura = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -68,7 +68,7 @@ namespace CapaPresentacion
             this.nroFactura.BackColor = System.Drawing.Color.Gainsboro;
             this.nroFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nroFactura.Location = new System.Drawing.Point(177, 20);
-            this.nroFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nroFactura.Margin = new System.Windows.Forms.Padding(4);
             this.nroFactura.Name = "nroFactura";
             this.nroFactura.ReadOnly = true;
             this.nroFactura.Size = new System.Drawing.Size(147, 29);
@@ -93,9 +93,9 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.nombreCompletoAlumno);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(16, 59);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(889, 84);
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
@@ -106,7 +106,7 @@ namespace CapaPresentacion
             this.DNIalumno.BackColor = System.Drawing.Color.Gainsboro;
             this.DNIalumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DNIalumno.Location = new System.Drawing.Point(619, 36);
-            this.DNIalumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DNIalumno.Margin = new System.Windows.Forms.Padding(4);
             this.DNIalumno.Name = "DNIalumno";
             this.DNIalumno.ReadOnly = true;
             this.DNIalumno.Size = new System.Drawing.Size(209, 29);
@@ -129,7 +129,7 @@ namespace CapaPresentacion
             this.nombreCompletoAlumno.BackColor = System.Drawing.Color.Gainsboro;
             this.nombreCompletoAlumno.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreCompletoAlumno.Location = new System.Drawing.Point(204, 36);
-            this.nombreCompletoAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreCompletoAlumno.Margin = new System.Windows.Forms.Padding(4);
             this.nombreCompletoAlumno.Name = "nombreCompletoAlumno";
             this.nombreCompletoAlumno.ReadOnly = true;
             this.nombreCompletoAlumno.Size = new System.Drawing.Size(319, 29);
@@ -152,7 +152,7 @@ namespace CapaPresentacion
             this.fecha.BackColor = System.Drawing.Color.Gainsboro;
             this.fecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha.Location = new System.Drawing.Point(752, 20);
-            this.fecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fecha.Margin = new System.Windows.Forms.Padding(4);
             this.fecha.Name = "fecha";
             this.fecha.ReadOnly = true;
             this.fecha.Size = new System.Drawing.Size(152, 29);
@@ -176,9 +176,9 @@ namespace CapaPresentacion
             this.groupBox2.Controls.Add(this.subTotal);
             this.groupBox2.Controls.Add(this.dgvdata);
             this.groupBox2.Location = new System.Drawing.Point(16, 150);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(889, 287);
             this.groupBox2.TabIndex = 45;
             this.groupBox2.TabStop = false;
@@ -201,7 +201,7 @@ namespace CapaPresentacion
             this.subTotal.BackColor = System.Drawing.Color.Gainsboro;
             this.subTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subTotal.Location = new System.Drawing.Point(736, 245);
-            this.subTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.subTotal.Margin = new System.Windows.Forms.Padding(4);
             this.subTotal.Name = "subTotal";
             this.subTotal.ReadOnly = true;
             this.subTotal.Size = new System.Drawing.Size(137, 29);
@@ -213,46 +213,46 @@ namespace CapaPresentacion
             this.dgvdata.AllowUserToDeleteRows = false;
             this.dgvdata.AllowUserToResizeColumns = false;
             this.dgvdata.AllowUserToResizeRows = false;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightGray;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.dgvdata.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvdata.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvdata.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle17.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
             this.dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idDetalle,
             this.membresia,
             this.periodo,
             this.monto});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle19.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvdata.DefaultCellStyle = dataGridViewCellStyle19;
             this.dgvdata.Location = new System.Drawing.Point(15, 22);
-            this.dgvdata.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvdata.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
             this.dgvdata.ReadOnly = true;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvdata.RowHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvdata.RowHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgvdata.RowHeadersWidth = 30;
             this.dgvdata.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dgvdata.RowTemplate.Height = 30;
@@ -271,9 +271,9 @@ namespace CapaPresentacion
             // 
             // membresia
             // 
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            this.membresia.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            this.membresia.DefaultCellStyle = dataGridViewCellStyle18;
             this.membresia.HeaderText = "Membresia";
             this.membresia.MinimumWidth = 6;
             this.membresia.Name = "membresia";
@@ -301,7 +301,7 @@ namespace CapaPresentacion
             this.medioPagoTX.BackColor = System.Drawing.Color.Gainsboro;
             this.medioPagoTX.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.medioPagoTX.Location = new System.Drawing.Point(27, 482);
-            this.medioPagoTX.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.medioPagoTX.Margin = new System.Windows.Forms.Padding(4);
             this.medioPagoTX.Name = "medioPagoTX";
             this.medioPagoTX.ReadOnly = true;
             this.medioPagoTX.Size = new System.Drawing.Size(235, 29);
@@ -336,7 +336,7 @@ namespace CapaPresentacion
             this.recargo.BackColor = System.Drawing.Color.Gainsboro;
             this.recargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.recargo.Location = new System.Drawing.Point(279, 482);
-            this.recargo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.recargo.Margin = new System.Windows.Forms.Padding(4);
             this.recargo.Name = "recargo";
             this.recargo.ReadOnly = true;
             this.recargo.Size = new System.Drawing.Size(137, 29);
@@ -359,7 +359,7 @@ namespace CapaPresentacion
             this.total.BackColor = System.Drawing.Color.PaleGreen;
             this.total.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.total.Location = new System.Drawing.Point(448, 482);
-            this.total.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.total.Margin = new System.Windows.Forms.Padding(4);
             this.total.Name = "total";
             this.total.ReadOnly = true;
             this.total.Size = new System.Drawing.Size(137, 29);
@@ -379,14 +379,14 @@ namespace CapaPresentacion
             this.BGenerarPDF.IconSize = 35;
             this.BGenerarPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BGenerarPDF.Location = new System.Drawing.Point(692, 468);
-            this.BGenerarPDF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BGenerarPDF.Margin = new System.Windows.Forms.Padding(4);
             this.BGenerarPDF.Name = "BGenerarPDF";
             this.BGenerarPDF.Size = new System.Drawing.Size(213, 44);
             this.BGenerarPDF.TabIndex = 57;
             this.BGenerarPDF.Text = "GENERAR PDF";
             this.BGenerarPDF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BGenerarPDF.UseVisualStyleBackColor = false;
-            this.BGenerarPDF.Visible = false;
+            this.BGenerarPDF.Click += new System.EventHandler(this.BGenerarPDF_Click);
             // 
             // DetalleDePago
             // 
@@ -407,7 +407,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DetalleDePago";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.DetalleDePago_Load);
