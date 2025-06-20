@@ -84,9 +84,9 @@ namespace CapaPresentacion
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Location = new System.Drawing.Point(16, 15);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(768, 370);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -289,7 +289,7 @@ namespace CapaPresentacion
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox1.Location = new System.Drawing.Point(8, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(271, 249);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -310,14 +310,13 @@ namespace CapaPresentacion
             this.BModificarAlumno.IconSize = 35;
             this.BModificarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BModificarAlumno.Location = new System.Drawing.Point(792, 22);
-            this.BModificarAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BModificarAlumno.Margin = new System.Windows.Forms.Padding(4);
             this.BModificarAlumno.Name = "BModificarAlumno";
             this.BModificarAlumno.Size = new System.Drawing.Size(245, 43);
             this.BModificarAlumno.TabIndex = 27;
             this.BModificarAlumno.Text = "Modificar datos";
             this.BModificarAlumno.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BModificarAlumno.UseVisualStyleBackColor = false;
-            this.BModificarAlumno.Visible = false;
             this.BModificarAlumno.Click += new System.EventHandler(this.BModificarAlumno_Click);
             // 
             // BListaDePagos
@@ -334,7 +333,7 @@ namespace CapaPresentacion
             this.BListaDePagos.IconSize = 30;
             this.BListaDePagos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BListaDePagos.Location = new System.Drawing.Point(792, 75);
-            this.BListaDePagos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BListaDePagos.Margin = new System.Windows.Forms.Padding(4);
             this.BListaDePagos.Name = "BListaDePagos";
             this.BListaDePagos.Size = new System.Drawing.Size(245, 43);
             this.BListaDePagos.TabIndex = 29;
@@ -357,7 +356,7 @@ namespace CapaPresentacion
             this.BCobrarCuota.IconSize = 30;
             this.BCobrarCuota.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BCobrarCuota.Location = new System.Drawing.Point(792, 129);
-            this.BCobrarCuota.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BCobrarCuota.Margin = new System.Windows.Forms.Padding(4);
             this.BCobrarCuota.Name = "BCobrarCuota";
             this.BCobrarCuota.Size = new System.Drawing.Size(245, 43);
             this.BCobrarCuota.TabIndex = 30;
@@ -380,7 +379,7 @@ namespace CapaPresentacion
             this.BbajaAlumno.IconSize = 30;
             this.BbajaAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BbajaAlumno.Location = new System.Drawing.Point(792, 492);
-            this.BbajaAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BbajaAlumno.Margin = new System.Windows.Forms.Padding(4);
             this.BbajaAlumno.Name = "BbajaAlumno";
             this.BbajaAlumno.Size = new System.Drawing.Size(245, 43);
             this.BbajaAlumno.TabIndex = 31;
@@ -399,9 +398,9 @@ namespace CapaPresentacion
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Location = new System.Drawing.Point(16, 393);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(768, 143);
             this.groupBox2.TabIndex = 34;
             this.groupBox2.TabStop = false;
@@ -492,7 +491,7 @@ namespace CapaPresentacion
             this.BRestaurarAlumno.IconSize = 30;
             this.BRestaurarAlumno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BRestaurarAlumno.Location = new System.Drawing.Point(792, 492);
-            this.BRestaurarAlumno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BRestaurarAlumno.Margin = new System.Windows.Forms.Padding(4);
             this.BRestaurarAlumno.Name = "BRestaurarAlumno";
             this.BRestaurarAlumno.Size = new System.Drawing.Size(245, 43);
             this.BRestaurarAlumno.TabIndex = 35;
@@ -515,7 +514,7 @@ namespace CapaPresentacion
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BRestaurarAlumno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FichaAlumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FICHA DEL ALUMNO";

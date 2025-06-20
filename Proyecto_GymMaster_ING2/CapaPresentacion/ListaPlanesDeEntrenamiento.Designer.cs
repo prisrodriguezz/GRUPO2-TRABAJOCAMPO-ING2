@@ -58,7 +58,13 @@ namespace CapaPresentacion
             this.textBoxBusqueda = new System.Windows.Forms.TextBox();
             this.LBuscar = new System.Windows.Forms.Label();
             this.BNuevoPlan = new FontAwesome.Sharp.IconButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxFecha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdataListaPlanes)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelCantPlanes
@@ -66,9 +72,10 @@ namespace CapaPresentacion
             this.labelCantPlanes.AutoSize = true;
             this.labelCantPlanes.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCantPlanes.ForeColor = System.Drawing.Color.Black;
-            this.labelCantPlanes.Location = new System.Drawing.Point(154, 451);
+            this.labelCantPlanes.Location = new System.Drawing.Point(205, 555);
+            this.labelCantPlanes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCantPlanes.Name = "labelCantPlanes";
-            this.labelCantPlanes.Size = new System.Drawing.Size(64, 20);
+            this.labelCantPlanes.Size = new System.Drawing.Size(80, 24);
             this.labelCantPlanes.TabIndex = 46;
             this.labelCantPlanes.Text = "0 planes";
             // 
@@ -77,9 +84,10 @@ namespace CapaPresentacion
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(11, 451);
+            this.label3.Location = new System.Drawing.Point(15, 555);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 20);
+            this.label3.Size = new System.Drawing.Size(186, 25);
             this.label3.TabIndex = 45;
             this.label3.Text = "Cantidad de planes:";
             // 
@@ -89,9 +97,10 @@ namespace CapaPresentacion
             this.labelTITULO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelTITULO.Font = new System.Drawing.Font("Microsoft PhagsPa", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTITULO.ForeColor = System.Drawing.Color.OrangeRed;
-            this.labelTITULO.Location = new System.Drawing.Point(12, 5);
+            this.labelTITULO.Location = new System.Drawing.Point(16, 6);
+            this.labelTITULO.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTITULO.Name = "labelTITULO";
-            this.labelTITULO.Size = new System.Drawing.Size(866, 40);
+            this.labelTITULO.Size = new System.Drawing.Size(1154, 49);
             this.labelTITULO.TabIndex = 39;
             this.labelTITULO.Text = "LISTA DE PLANES";
             this.labelTITULO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -108,9 +117,10 @@ namespace CapaPresentacion
             this.BLimpiar.IconColor = System.Drawing.Color.White;
             this.BLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BLimpiar.IconSize = 25;
-            this.BLimpiar.Location = new System.Drawing.Point(832, 13);
+            this.BLimpiar.Location = new System.Drawing.Point(1109, 16);
+            this.BLimpiar.Margin = new System.Windows.Forms.Padding(4);
             this.BLimpiar.Name = "BLimpiar";
-            this.BLimpiar.Size = new System.Drawing.Size(35, 24);
+            this.BLimpiar.Size = new System.Drawing.Size(47, 30);
             this.BLimpiar.TabIndex = 44;
             this.BLimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BLimpiar.UseVisualStyleBackColor = false;
@@ -128,9 +138,10 @@ namespace CapaPresentacion
             this.Bbuscar.IconColor = System.Drawing.Color.White;
             this.Bbuscar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Bbuscar.IconSize = 20;
-            this.Bbuscar.Location = new System.Drawing.Point(781, 13);
+            this.Bbuscar.Location = new System.Drawing.Point(1041, 16);
+            this.Bbuscar.Margin = new System.Windows.Forms.Padding(4);
             this.Bbuscar.Name = "Bbuscar";
-            this.Bbuscar.Size = new System.Drawing.Size(35, 24);
+            this.Bbuscar.Size = new System.Drawing.Size(47, 30);
             this.Bbuscar.TabIndex = 43;
             this.Bbuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Bbuscar.UseVisualStyleBackColor = false;
@@ -174,7 +185,8 @@ namespace CapaPresentacion
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvdataListaPlanes.DefaultCellStyle = dataGridViewCellStyle9;
-            this.dgvdataListaPlanes.Location = new System.Drawing.Point(12, 51);
+            this.dgvdataListaPlanes.Location = new System.Drawing.Point(16, 63);
+            this.dgvdataListaPlanes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvdataListaPlanes.MultiSelect = false;
             this.dgvdataListaPlanes.Name = "dgvdataListaPlanes";
             this.dgvdataListaPlanes.ReadOnly = true;
@@ -190,7 +202,7 @@ namespace CapaPresentacion
             this.dgvdataListaPlanes.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dgvdataListaPlanes.RowTemplate.Height = 30;
             this.dgvdataListaPlanes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdataListaPlanes.Size = new System.Drawing.Size(866, 394);
+            this.dgvdataListaPlanes.Size = new System.Drawing.Size(1155, 485);
             this.dgvdataListaPlanes.TabIndex = 47;
             this.dgvdataListaPlanes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvdataListaPlanes_CellContentClick);
             this.dgvdataListaPlanes.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvdataListaPlanes_ColumnHeaderMouseClick);
@@ -202,6 +214,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             this.Editar.DefaultCellStyle = dataGridViewCellStyle3;
             this.Editar.HeaderText = "";
+            this.Editar.MinimumWidth = 6;
             this.Editar.Name = "Editar";
             this.Editar.ReadOnly = true;
             // 
@@ -212,12 +225,14 @@ namespace CapaPresentacion
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             this.eliminar.DefaultCellStyle = dataGridViewCellStyle4;
             this.eliminar.HeaderText = "";
+            this.eliminar.MinimumWidth = 6;
             this.eliminar.Name = "eliminar";
             this.eliminar.ReadOnly = true;
             // 
             // idPlan
             // 
             this.idPlan.HeaderText = "Idplan";
+            this.idPlan.MinimumWidth = 6;
             this.idPlan.Name = "idPlan";
             this.idPlan.ReadOnly = true;
             this.idPlan.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -229,6 +244,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
             this.Nombre.DefaultCellStyle = dataGridViewCellStyle5;
             this.Nombre.HeaderText = "Nombre";
+            this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
             this.Nombre.ReadOnly = true;
             this.Nombre.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -236,6 +252,7 @@ namespace CapaPresentacion
             // fechaInicio
             // 
             this.fechaInicio.HeaderText = "Fecha Inicio";
+            this.fechaInicio.MinimumWidth = 6;
             this.fechaInicio.Name = "fechaInicio";
             this.fechaInicio.ReadOnly = true;
             this.fechaInicio.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -246,6 +263,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             this.fechaFin.DefaultCellStyle = dataGridViewCellStyle6;
             this.fechaFin.HeaderText = "Fecha Fin";
+            this.fechaFin.MinimumWidth = 6;
             this.fechaFin.Name = "fechaFin";
             this.fechaFin.ReadOnly = true;
             this.fechaFin.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -256,6 +274,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
             this.series.DefaultCellStyle = dataGridViewCellStyle7;
             this.series.HeaderText = "Series";
+            this.series.MinimumWidth = 6;
             this.series.Name = "series";
             this.series.ReadOnly = true;
             this.series.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -263,6 +282,7 @@ namespace CapaPresentacion
             // detallesPlan
             // 
             this.detallesPlan.HeaderText = "Ejercicios / Coach";
+            this.detallesPlan.MinimumWidth = 6;
             this.detallesPlan.Name = "detallesPlan";
             this.detallesPlan.ReadOnly = true;
             this.detallesPlan.Text = "";
@@ -273,6 +293,7 @@ namespace CapaPresentacion
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
             this.Estado.DefaultCellStyle = dataGridViewCellStyle8;
             this.Estado.HeaderText = "Estado";
+            this.Estado.MinimumWidth = 6;
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
             this.Estado.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -283,9 +304,10 @@ namespace CapaPresentacion
             this.LnombreColumna.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.LnombreColumna.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LnombreColumna.ForeColor = System.Drawing.Color.Red;
-            this.LnombreColumna.Location = new System.Drawing.Point(475, 19);
+            this.LnombreColumna.Location = new System.Drawing.Point(633, 23);
+            this.LnombreColumna.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LnombreColumna.Name = "LnombreColumna";
-            this.LnombreColumna.Size = new System.Drawing.Size(102, 16);
+            this.LnombreColumna.Size = new System.Drawing.Size(123, 20);
             this.LnombreColumna.TabIndex = 50;
             this.LnombreColumna.Text = "Nombre campo";
             this.LnombreColumna.Visible = false;
@@ -293,9 +315,10 @@ namespace CapaPresentacion
             // textBoxBusqueda
             // 
             this.textBoxBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBusqueda.Location = new System.Drawing.Point(595, 14);
+            this.textBoxBusqueda.Location = new System.Drawing.Point(793, 17);
+            this.textBoxBusqueda.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxBusqueda.Name = "textBoxBusqueda";
-            this.textBoxBusqueda.Size = new System.Drawing.Size(180, 24);
+            this.textBoxBusqueda.Size = new System.Drawing.Size(239, 29);
             this.textBoxBusqueda.TabIndex = 48;
             // 
             // LBuscar
@@ -303,9 +326,10 @@ namespace CapaPresentacion
             this.LBuscar.AutoSize = true;
             this.LBuscar.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.LBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBuscar.Location = new System.Drawing.Point(401, 19);
+            this.LBuscar.Location = new System.Drawing.Point(535, 23);
+            this.LBuscar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBuscar.Name = "LBuscar";
-            this.LBuscar.Size = new System.Drawing.Size(76, 16);
+            this.LBuscar.Size = new System.Drawing.Size(97, 20);
             this.LBuscar.TabIndex = 49;
             this.LBuscar.Text = "Buscar por:";
             this.LBuscar.Visible = false;
@@ -323,20 +347,82 @@ namespace CapaPresentacion
             this.BNuevoPlan.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BNuevoPlan.IconSize = 30;
             this.BNuevoPlan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BNuevoPlan.Location = new System.Drawing.Point(680, 451);
+            this.BNuevoPlan.Location = new System.Drawing.Point(907, 555);
+            this.BNuevoPlan.Margin = new System.Windows.Forms.Padding(4);
             this.BNuevoPlan.Name = "BNuevoPlan";
-            this.BNuevoPlan.Size = new System.Drawing.Size(198, 45);
+            this.BNuevoPlan.Size = new System.Drawing.Size(264, 55);
             this.BNuevoPlan.TabIndex = 51;
             this.BNuevoPlan.Text = "AGREGAR NUEVO PLAN";
             this.BNuevoPlan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BNuevoPlan.UseVisualStyleBackColor = false;
             this.BNuevoPlan.Click += new System.EventHandler(this.BNuevoPlan_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.textBoxFecha);
+            this.groupBox1.Location = new System.Drawing.Point(387, 556);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(385, 55);
+            this.groupBox1.TabIndex = 55;
+            this.groupBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(248, 23);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(120, 17);
+            this.label2.TabIndex = 65;
+            this.label2.Text = "PLAN VIGENTE";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox1.Location = new System.Drawing.Point(215, 17);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(29, 26);
+            this.textBox1.TabIndex = 66;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(41, 23);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 17);
+            this.label1.TabIndex = 55;
+            this.label1.Text = "PLAN VENCIDO";
+            // 
+            // textBoxFecha
+            // 
+            this.textBoxFecha.BackColor = System.Drawing.Color.MistyRose;
+            this.textBoxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxFecha.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBoxFecha.Location = new System.Drawing.Point(8, 17);
+            this.textBoxFecha.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxFecha.Name = "textBoxFecha";
+            this.textBoxFecha.ReadOnly = true;
+            this.textBoxFecha.Size = new System.Drawing.Size(29, 26);
+            this.textBoxFecha.TabIndex = 64;
+            // 
             // ListaPlanesDeEntrenamiento
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 507);
+            this.ClientSize = new System.Drawing.Size(1187, 624);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.BNuevoPlan);
             this.Controls.Add(this.LnombreColumna);
             this.Controls.Add(this.textBoxBusqueda);
@@ -348,10 +434,13 @@ namespace CapaPresentacion
             this.Controls.Add(this.labelTITULO);
             this.Controls.Add(this.dgvdataListaPlanes);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListaPlanesDeEntrenamiento";
             this.Text = "ListaPlanesDeEntrenamiento";
             this.Load += new System.EventHandler(this.ListaPlanesDeEntrenamiento_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdataListaPlanes)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -377,5 +466,10 @@ namespace CapaPresentacion
         private System.Windows.Forms.DataGridViewTextBoxColumn series;
         private System.Windows.Forms.DataGridViewButtonColumn detallesPlan;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxFecha;
     }
 }

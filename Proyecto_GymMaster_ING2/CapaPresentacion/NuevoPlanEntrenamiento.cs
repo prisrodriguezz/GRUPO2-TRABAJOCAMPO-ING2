@@ -28,10 +28,12 @@ namespace CapaPresentacion
 
         private void NuevoPlanEntrenamiento_Load(object sender, EventArgs e)
         {
-            DateTime fechaNacimiento = DateTime.Parse(usuarioActual.fecha_nacimiento);
+            if(textBoxID.Text == "0"){ // si se crea un nuevo plan se asigna al coach que lo esta creando
+                DateTime fechaNacimiento = DateTime.Parse(usuarioActual.fecha_nacimiento);
 
-            dataGridCoachSeleccionados.Rows.Add(" ", usuarioActual.id_usuario, usuarioActual.nombre, usuarioActual.apellido,
-                usuarioActual.dni, usuarioActual.email, fechaNacimiento.ToString("dd/MM/yyyy"), usuarioActual.telefono);
+                dataGridCoachSeleccionados.Rows.Add(" ", usuarioActual.id_usuario, usuarioActual.nombre, usuarioActual.apellido,
+                    usuarioActual.dni, usuarioActual.email, fechaNacimiento.ToString("dd/MM/yyyy"), usuarioActual.telefono);
+            }
         }
 
         private void BAgregarEjercicio_Click(object sender, EventArgs e)

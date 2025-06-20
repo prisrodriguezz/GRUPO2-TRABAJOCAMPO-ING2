@@ -23,6 +23,12 @@ namespace CapaPresentacion
 
         private void DetallesPlanEntrenamiento_Load(object sender, EventArgs e)
         {
+            string mensaje = string.Empty;
+
+            PlanEntrenamiento Plan = new CN_PlanEntrenamiento().ObtenerPlanPorID(id_Plan, out mensaje);
+
+            nombrePlan.Text = Plan.nombre.ToString();
+
             // Llamar a la capa de negocio para obtener los ejercicios del plan
             List<Ejercicio> listaEjercicios = new CN_PlanEntrenamiento().ListarEjerciciosPorPlan(id_Plan);
 
@@ -45,5 +51,6 @@ namespace CapaPresentacion
 
             cantCoachs.Text = $"{dgvdataCoach.Rows.Count}";
         }
+
     }
 }

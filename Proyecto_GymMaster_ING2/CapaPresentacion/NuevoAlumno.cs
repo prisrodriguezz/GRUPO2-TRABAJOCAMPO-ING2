@@ -139,12 +139,17 @@ namespace CapaPresentacion
             // Añadir los planes al ComboBox
             foreach (PlanEntrenamiento item in listaPlanes)
             {
-                // Solo añade planes activos al ComboBox 
+                // Solo añade planes activos al ComboBox y si estan dentro las fechas validas
+                if (item.estado && item.fechaInicio <= DateTime.Now && item.fechaFin >= DateTime.Now)
+                {
+                    comboBoxPlan.Items.Add(new { Text = item.nombre, Value = item.id_plan });
+                }
+                /*
                 if (item.estado)
                 {
                     // Agregar el plan como un nuevo item en el ComboBox
                     comboBoxPlan.Items.Add(new { Text = item.nombre, Value = item.id_plan });
-                }
+                }*/
             }
 
             comboBoxPlan.DisplayMember = "Text"; // Muestra el nombre del plan
@@ -197,6 +202,7 @@ namespace CapaPresentacion
             if (pictureBox1.Image == null)
             {
                 MessageBox.Show("Por favor, cargue una imagen antes de continuar.", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
             }
 
             // Validar longitud del teléfono

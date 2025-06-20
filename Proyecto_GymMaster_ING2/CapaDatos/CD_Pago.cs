@@ -101,8 +101,6 @@ namespace CapaDatos
             return listaPagos;
         }
 
-
-
         public List<PagoDetalle> ListarPagoDetalles(int idPago)
         {
             List<PagoDetalle> listaDetalles = new List<PagoDetalle>();

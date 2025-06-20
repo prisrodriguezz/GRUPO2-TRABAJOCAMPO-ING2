@@ -42,8 +42,13 @@ namespace CapaPresentacion
                 {
                     string accion = item.estado ? "Eliminar" : "Restaurar";
 
-                    dgvdataListaPlanes.Rows.Add(new object[] {"Editar", accion, item.id_plan, item.nombre, item.fechaInicio.ToString("dd/MM/yyyy"),
+                    int rowIndex = dgvdataListaPlanes.Rows.Add(new object[] {"Editar", accion, item.id_plan, item.nombre, item.fechaInicio.ToString("dd/MM/yyyy"),
                     item.fechaFin.ToString("dd/MM/yyyy"), item.cantSeries, "Ver detalles", item.estado == true ? "Activo" : "Inactivo" });
+
+                    if (item.fechaFin < DateTime.Now)
+                    {
+                        dgvdataListaPlanes.Rows[rowIndex].DefaultCellStyle.BackColor = Color.MistyRose; // Cambia el color de la fila si el plan esta vencido
+                    }
                 }
 
                 dgvdataListaPlanes.Columns["editar"].Visible = false;
@@ -60,8 +65,13 @@ namespace CapaPresentacion
                 {
                     string accion = item.estado ? "Eliminar" : "Restaurar";
 
-                    dgvdataListaPlanes.Rows.Add(new object[] {"Editar", accion, item.id_plan, item.nombre, item.fechaInicio.ToString("dd/MM/yyyy"),
+                    int rowIndex = dgvdataListaPlanes.Rows.Add(new object[] {"Editar", accion, item.id_plan, item.nombre, item.fechaInicio.ToString("dd/MM/yyyy"),
                     item.fechaFin.ToString("dd/MM/yyyy"), item.cantSeries, "Ver detalles", item.estado == true ? "Activo" : "Inactivo" });
+
+                    if (item.fechaFin < DateTime.Now)
+                    {
+                        dgvdataListaPlanes.Rows[rowIndex].DefaultCellStyle.BackColor = Color.MistyRose; // Cambia el color de la fila si el plan esta vencido
+                    }
                 }
             }
             
@@ -255,5 +265,7 @@ namespace CapaPresentacion
                 }
             }
         }
+
+        
     }
 }

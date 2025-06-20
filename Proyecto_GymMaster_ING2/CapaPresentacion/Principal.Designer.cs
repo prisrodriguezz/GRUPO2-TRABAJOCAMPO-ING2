@@ -134,7 +134,6 @@ namespace CapaPresentacion
             // menuPagos
             // 
             this.menuPagos.AutoSize = false;
-            this.menuPagos.Enabled = false;
             this.menuPagos.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuPagos.IconChar = FontAwesome.Sharp.IconChar.SackDollar;
             this.menuPagos.IconColor = System.Drawing.Color.Black;
@@ -145,6 +144,7 @@ namespace CapaPresentacion
             this.menuPagos.Name = "menuPagos";
             this.menuPagos.Size = new System.Drawing.Size(220, 54);
             this.menuPagos.Text = "Pagos";
+            this.menuPagos.Click += new System.EventHandler(this.menuPagos_Click);
             // 
             // menuTitulo
             // 
@@ -264,7 +264,7 @@ namespace CapaPresentacion
             this.labelFecha.AutoSize = true;
             this.labelFecha.BackColor = System.Drawing.Color.OrangeRed;
             this.labelFecha.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelFecha.Location = new System.Drawing.Point(27, 672);
+            this.labelFecha.Location = new System.Drawing.Point(28, 672);
             this.labelFecha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelFecha.Name = "labelFecha";
             this.labelFecha.Size = new System.Drawing.Size(232, 23);
