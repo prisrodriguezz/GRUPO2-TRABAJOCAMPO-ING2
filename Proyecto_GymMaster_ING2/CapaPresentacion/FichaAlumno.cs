@@ -91,11 +91,15 @@ namespace CapaPresentacion
                     {
                         BbajaAlumno.Visible = true;
                         BRestaurarAlumno.Visible = false;
+                        BCobrarCuota.Visible = true;
+                        BModificarAlumno.Visible = true;
                     }
                     else if (item.estado == false && usuarioActual.id_rol.id_rol == 1)
                     {
                         BRestaurarAlumno.Visible = true;
                         BbajaAlumno.Visible = false;
+                        BCobrarCuota.Visible = false;
+                        BModificarAlumno.Visible = false;
                     }
 
                     labelNombreCompleto.Text = item.nombre + " " + item.apellido;
